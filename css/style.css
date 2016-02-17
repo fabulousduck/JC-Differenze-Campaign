@@ -1,0 +1,336 @@
+body{
+    margin:0; 
+    padding:0;
+    font-family: 'Raleway', sans-serif; /*default font*/
+    height: 200%;
+}
+/*___FONTS___*/
+/* font-family: 'Raleway', sans-serif;          DEFAULT */
+/* font-family: 'Raleway bold', sans-serif;     BOLD    */
+/* font-family: 'Raleway light', sans-serif;    LIGHT   */
+/*___COLORS___*/
+/* Light red       #e74c3c  */
+/* Dark red        #b43b2f  */
+/* Green           #27ae60  */
+/* Drak Green      #219250  */
+/* Broke n white   #fafafa  */
+/* Text grey:      #2c2c2c  */
+/* Light black     #242424  */
+
+/*COMMENTS*/
+/*
+footer color = text color 
+*/
+
+/* PREFIX TRANSITION
+
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+    
+*/
+
+.header{
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fafafa;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.04);
+    
+}
+
+.menu{
+    
+    width: 85px;
+    height: 70px;
+    background-color:#fafafa;
+    display: inline;
+    text-align: center;
+    float: left;
+    border-right: 1px solid;
+    border-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+    
+}
+
+.menu:hover{
+    
+    background-color:#f2f2f2;    
+
+}
+
+.menu .menu-button{
+    
+    display: inline;
+    font-size: 30px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 18px;
+    color:#242424 ;
+    cursor: pointer;
+    
+}
+
+.menu .menu-button i{
+    
+    font-size: 30px;
+    color:#242424 ;
+    
+}
+
+.navigation-sub{
+    
+    position: absolute;
+    top: 70px;
+    width: 250px;
+    height: auto;
+    background-color: #f2f2f2;
+    z-index: 1000;
+    display: none;
+    
+}
+
+.navigation-sub ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navigation-sub ul li{
+    
+    text-align: left;
+    height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+.navigation-sub ul li:hover{
+    
+    background-color:#EBEBEB;
+
+}
+.navigation-sub ul li a{
+    
+    color: #242424;
+    text-decoration: none;
+    width: auto;
+    position: relative;
+    top: 18px;
+    left: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.show-menu{
+    
+    display: block;
+    background-color: #f2f2f2;
+    
+}
+
+.logo{
+    
+    width: 250px;
+    height: 70px;
+    display: inline-block;
+    
+    text-align: center;
+    
+}
+
+.logo .logo-img{
+    
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    background-image:url('../img/remostep-logo.png');
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+    
+
+}
+
+.navigation{
+ 
+    width: auto;
+    display: inline-block;
+    
+}
+
+.navigation ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navigation ul li{
+    
+    display:inline-block;
+    text-align: center;
+    height: 70px;
+    
+}
+
+.navigation ul li:hover{
+    
+    background-color:#f2f2f2;
+
+    
+}
+.navigation ul li a{
+    
+    color: #242424;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    top: 40%;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.account-login{
+    
+    width: 170px;
+    height: 70px;
+    background-color:#fafafa;
+    float: right;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.account-login:hover{
+    
+    background-color:#f2f2f2;
+    
+}
+
+.account-login .inner-text{
+    
+    color: #242424;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    position:relative;
+    top:27px;
+    width: 100%;
+    
+}
+
+.account-login .arrow{
+    
+    
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    
+    -webkit-transition: all ease-out 300ms;
+    -moz-transition: all ease-out 300ms;
+    -ms-transition: all ease-out 300ms;
+    -o-transition: all ease-out 300ms;
+    transition: all ease-out 300ms;
+    
+}
+
+.account-login:hover .arrow{
+    
+    -ms-transform: rotateZ(90deg); /* IE 9 */
+    -webkit-transform: rotateZ(90deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    
+    -webkit-transition: all ease-in 300ms;
+    -moz-transition: all ease-in 300ms;
+    -ms-transition: all ease-in 300ms;
+    -o-transition: all ease-in 300ms;
+    transition: all ease-in 300ms;
+}
+
+.sign-up{
+    
+    width: 170px;
+    height: 70px;
+    background-color:#27ae60;
+    float: right;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.sign-up:hover{
+    
+    background-color:#219250;
+    
+}
+
+.sign-up .inner-text{
+    
+    color: #242424;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    color:#fafafa;
+    position:relative;
+    top:27px;
+    width: 100%;
+}
+
+.sign-up .arrow{
+    
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    -webkit-transition: all ease-out 300ms;
+    -moz-transition: all ease-out 300ms;
+    -ms-transition: all ease-out 300ms;
+    -o-transition: all ease-out 300ms;
+    transition: all ease-out 300ms;
+    
+}
+
+.sign-up:hover .arrow{
+    
+    left: 15px;
+    -webkit-transition: all ease-in 300ms;
+    -moz-transition: all ease-in 300ms;
+    -ms-transition: all ease-in 300ms;
+    -o-transition: all ease-in 300ms;
+    transition: all ease-in 300ms;
+    
+}
+
+
+.header-image{
+    background-image:url('http://17864.hosts.ma-cloud.nl/remo/loner.jpg');
+    background-size: cover;
+    background-position:center center;
+    width:100%;
+    height: 650px;
+    border-bottom: 3px solid #b43b2f;
+    box-shadow: 15px 0px 30px -6px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 5px 5px 30px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 5px 30px -6px rgba(0,0,0,0.75);
+    
+
+}
+

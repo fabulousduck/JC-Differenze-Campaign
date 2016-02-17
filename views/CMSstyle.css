@@ -1,0 +1,107 @@
+*{margin: 0;}
+
+#panelSelector{
+    height: 40px;
+    width: 40%;
+    border: 1px solid #000;
+    float: left;
+    margin-left:30%;
+}
+
+.panelSelectorButton{
+    height: 100%;
+    width: 33.3334%;
+    background-color: black;
+    cursor: pointer;
+    float: left;
+}
+
+.panelSelectorButton p{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+    padding-top: 10px;
+}
+
+
+#editorPanel{
+    height: auto;
+    width: 100%;
+    margin-left: 0%;
+    float: left;
+    border: 1px solid #000;
+    margin-top: 100px;
+}
+
+.gridRow{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #000;
+}
+.gridCell{
+    height: 100%;
+    width: 12.37%;
+    border: 1px solid #000;
+    float: left;
+}
+
+.gridCell p{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.contentGridCell{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.taGridCell{
+    height: 100%;
+    width: 100%;
+}
+.sGridCell{
+    height: 100%;
+    width: 100%;
+}
+
+#newButton{
+    height: 50px;
+    width: 10%;
+    background-color: black;
+    float: right;
+    margin-right: 30%;
+    margin-top: 100px;
+}
+
+#newButton p{
+    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#layoutPanel{
+    height: 400px;
+    width: 70%;
+    margin-left: 15%;
+    /*border: 1px solid #000;*/
+    margin-top: 100px;
+    float: left;
+}
+
+.layoutClass{
+    height: 90%;
+    width: 20%;
+    background-color: grey;
+    float: left;
+    margin-left: 5%;
+    margin-top:2%;
+    border-radius : 20px;
+}
+
+.initial{
+    margin-left:15%;
+}
