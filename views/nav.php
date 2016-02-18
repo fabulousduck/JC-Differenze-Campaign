@@ -1,6 +1,3 @@
-<div class="header">
-        <!-- begin nav -->
- 
         <div class="menu">
             
             <div class="menu-button">
@@ -10,34 +7,48 @@
             </div>
             
         </div>
-        <script id="navigationTemplate" type="text/x-handlebars-template">
+        
         <div class="navigation-sub">
             
-            <ul>
-                <li><a href="index.html">{{btn_nav_0}}</a></li>
-                <li><a href="index.html">{{btn_nav_1}}</a></li>
-                <li><a href="index.html">{{btn_nav_2}}</a></li>
-                <li><a href="index.html">{{btn_nav_3}}</a></li>
-            </ul> 
+            <script id="navigationTemplate" type="text/x-handlebars-template">
+    		    <ul>
+                    <li><a href="">{{btn_nav_0}}</a></li>
+                    <li><a href="">{{btn_nav_1}}</a></li>
+                    <li><a href="">{{btn_nav_2}}</a></li>
+                    <li><a href="">{{btn_nav_3}}</a></li>
+                </ul> 
+    		</script>
+    		        
             
         </div> <!-- End nav items sub navigation -->
         
         <div class="logo">
             
-            HIER KOMT EEN LOGO
-            
+            <a href=""><div class="logo-img">.</div></a>
         </div>
         
+        
         <div class="navigation">
-    		<ul>
-                <li><a href="index.html">{{btn_nav_0}}</a></li>
-                <li><a href="index.html">{{btn_nav_1}}</a></li>
-                <li><a href="index.html">{{btn_nav_2}}</a></li>
-                <li><a href="index.html">{{btn_nav_3}}</a></li>
+		</div> <!-- End nav items regular navigation -->
+		
+		
+		<!---TEMPLATE FOR NAV ITEMS-->
+		
+		
+		<script id="navigationTemplate" type="text/x-handlebars-template">
+		    <ul>
+                <li><a href="">{{btn_nav_0}}</a> </li>
+                <li><a href="">{{btn_nav_1}}</a></li>
+                <li><a href="">{{btn_nav_2}}</a></li>
+                <li><a href="">{{btn_nav_3}}</a></li>
             </ul> 
-		</div>
+            
 		</script>
-		<!-- End nav items regular navigation -->
+		
+		
+		
+		
+		
 		
 		<a href="http://youtube.com/"><div class="sign-up">
 		    
@@ -59,5 +70,4 @@
 		    
 		</div>
 		
-	</div> <!-- End header -->
-    
+	</div>

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="Mstyle.css">
     </head>
     <body>
-        
+            
        <div id="panelSelector">
            <a href="?p=navigation"><div class="panelSelectorButton"><p>Edit navigation</p></div></a>
            <a href="?p=body"><div class="panelSelectorButton"><p>Edit Body</p></div></a>
@@ -22,7 +22,11 @@
        <!--    <div class="layoutClass"></div>-->
        <!--    <div class="layoutClass"></div>-->
        <!--</div>-->
-       
+       <div id="optionsMenu">
+           <div class="optionsButton"><p>new</p></div>
+           <div class="optionsButton"><p>delete</p></div>
+       </div>
+
         <div id="editorPanel">
             <div class="gridRow">
                 <div class="gridCell"><p>Content_id</p></div>
@@ -40,11 +44,6 @@
         </div>
         
      
-        
-        
-        <!-- memes -->
-        
-        <!-- templates down here -->
 
         <!--<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>-->
         <!--<script type="text/javascript" src="../logic/JS/handlebars.js"></script>-->

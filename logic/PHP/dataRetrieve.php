@@ -34,7 +34,6 @@
                     echo "<input type='hidden' name='Partof' value='navigation'>";
                     echo "<input type='hidden' name='id' value='".$row['id']."'>";
                     echo "<input type='hidden' name='content_title' value='".$row['ContentTitle']."'>";
-                    // echo "<input type='hidden' name='pageheader' value='".$_GET['ep']."'>";
                     echo "<div class='gridCell'><input type='submit' value='edit' class='sGridCell'></div>";
                 echo "</div>";
             echo "</form>";

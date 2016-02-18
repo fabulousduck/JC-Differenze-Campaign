@@ -7,7 +7,7 @@
     float: left;
     margin-left:30%;
 }
-
+                        
 .panelSelectorButton{
     height: 100%;
     width: 33.3334%;
@@ -30,7 +30,7 @@
     margin-left: 0%;
     float: left;
     border: 1px solid #000;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
 
 .gridRow{
@@ -67,19 +67,19 @@
     width: 100%;
 }
 
-#newButton{
+.optionsButton{
     height: 50px;
     width: 10%;
     background-color: black;
-    float: right;
-    margin-right: 30%;
-    margin-top: 100px;
+    float: left;
+    margin-left: 1%;
+    cursor : pointer;
 }
 
-#newButton p{
+.optionsButton p{
     font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     color: white;
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -105,3 +105,12 @@
 .initial{
     margin-left:15%;
 }
+
+#optionsMenu{
+    height: 50px;
+    width: 100%;
+    margin-top: 100px;
+    float: left;
+}
+
+
