@@ -2,11 +2,9 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
+### HOW TO COMMIT ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+example : COMMIT [<commit number>] @ <current date in DEC (17F16)> MESSAGE : <what changed>
 
 ### How do I get set up? ###
 
