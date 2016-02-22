@@ -6,7 +6,7 @@ This README would normally document whatever steps are necessary to get your app
 
 example : COMMIT [<commit number>] @ <current date in DEC (17F16)> MESSAGE : <what changed>
 
-### How do I get set up? ###
+### setup guide ###
 
 * Summary of set up
 * Configuration
