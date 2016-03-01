@@ -113,4 +113,10 @@
     float: left;
 }
 
+.optionsButton{
+    color:white;
+    font-size: 20px;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    border: none;
+}
 

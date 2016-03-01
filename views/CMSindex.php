@@ -1,5 +1,7 @@
 <?php
     include "../config/PHPconfig.php";
+    $get_var = $_GET['p'];
+    define("CURR_PAGE", $get_var);     
 ?>
 
 
@@ -14,7 +16,7 @@
        <div id="panelSelector">
            <a href="?p=navigation"><div class="panelSelectorButton"><p>Edit navigation</p></div></a>
            <a href="?p=body"><div class="panelSelectorButton"><p>Edit Body</p></div></a>
-           <a href="?p=footer"><div class="panelSelectorButton"><p>Edit Footer</p></div></a>
+           <a href="?p=footer"><div class="panelSelectorButton"><p>Edit Form</p></div></a>
        </div>
         
        <!--<div id="layoutPanel">-->
@@ -23,8 +25,11 @@
        <!--    <div class="layoutClass"></div>-->
        <!--</div>-->
        <div id="optionsMenu">
-           <div class="optionsButton"><p>new</p></div>
-           <div class="optionsButton"><p>delete</p></div>
+           <form action="../logic/PHP/makeData.php" method="post">
+               <input type="hidden" name="po" value="<?php echo CURR_PAGE ?>">
+               <input type="submit" class="optionsButton" value="new">
+            </form>
+           <form action="../logic/PHP/removeData.php" method="post"><input type="submit" class="optionsButton" value="remove"></form>
        </div>
 
         <div id="editorPanel">

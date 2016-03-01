@@ -1,73 +1,122 @@
-        <div class="menu">
-            
-            <div class="menu-button">
+<?php
+    include "config/PHPconfig.php";
+    error_reporting(0);
+    $language = $_GET['lang'] ?: "ENG";
+    define("LANGUAGE", $language);
+    include "logic/PHP/getData.php";
+?>
+
+<div class="menu-wrapper">
+
+    <div class="menu">
                 
-                <i class="fa fa-bars"></i>
+        <div class="menu-button">
+                    
+            <i class="fa fa-bars"></i>
+                    
+        </div>
                 
-            </div>
+    </div>
             
-        </div>
+    <div class="logo">
         
-        <div class="navigation-sub">
+        <a href=""><div class="logo-img">.</div></a>
+    </div>
             
-            <script id="navigationTemplate" type="text/x-handlebars-template">
-    		    <ul>
-                    <li><a href="">{{btn_nav_0}}</a></li>
-                    <li><a href="">{{btn_nav_1}}</a></li>
-                    <li><a href="">{{btn_nav_2}}</a></li>
-                    <li><a href="">{{btn_nav_3}}</a></li>
-                </ul> 
-    		</script>
-    		        
             
-        </div> <!-- End nav items sub navigation -->
-        
-        <div class="logo">
+    <div class="navigation">
+        <ul>
+            <?php
             
-            <a href=""><div class="logo-img">.</div></a>
-        </div>
-        
-        
-        <div class="navigation">
-		</div> <!-- End nav items regular navigation -->
-		
-		
-		<!---TEMPLATE FOR NAV ITEMS-->
-		
-		
-		<script id="navigationTemplate" type="text/x-handlebars-template">
-		    <ul>
-                <li><a href="">{{btn_nav_0}}</a> </li>
-                <li><a href="">{{btn_nav_1}}</a></li>
-                <li><a href="">{{btn_nav_2}}</a></li>
-                <li><a href="">{{btn_nav_3}}</a></li>
-            </ul> 
-            
-		</script>
-		
-		
-		
-		
-		
-		
-		<a href="http://youtube.com/"><div class="sign-up">
-		    
-		    <div class="inner-text"> sign up
-		    
-		        <div class="arrow"><i class="fa fa-arrow-right"></i></div>
-		    
-		    </div>
-		    
-		</div></a>
-		
-		<div class="account-login">
-		    
-		    <div class="inner-text">my account 
-		    
-		        <div class="arrow"><i class="fa fa-caret-right"></i></div>
-		        
-		    </div>
-		    
-		</div>
-		
+            switch (LANGUAGE){
+                case "ENG":
+                    $data = getLanguage("navigation",$mysqli);
+                    while($language = $data->fetch_assoc()){
+                        echo "<li><a href=''>".$language['Content_ENG']."</a></li>";
+                    }
+                    break;
+                case "NED":
+                    $data = getLanguage("navigation",$mysqli);
+                    while($language = $data->fetch_assoc()){
+                        echo "<li><a href=''>".$language['Content_NED']."</a></li>";
+                    }
+                    break;
+                case "ESP":
+                    $data = getLanguage("navigation",$mysqli);
+                    while($language = $data->fetch_assoc()){
+                        echo "<li><a href=''>".$language['Content_ESP']."</a></li>";
+                    }
+                    break;
+                case "SRB":
+                    $data = getLanguage("navigation",$mysqli);
+                    while($language = $data->fetch_assoc()){
+                        echo "<li><a href=''>".$language['Content_SRB']."</a></li>";
+                    }
+            }
+            ?>
+        </ul> 
 	</div>
+
+    
+	<a href="#sign-up"><div class="sign-up">
+	    
+	    <div class="inner-text"> sign up
+	    
+	        <div class="arrow"><i class="fa fa-arrow-right"></i></div>
+	    
+	    </div>
+	    
+	</div></a>
+	
+	<a href="#login"><div class="account-login">
+	    
+	    <div class="inner-text">my account 
+	    
+	        <div class="arrow"><i class="fa fa-caret-right"></i></div>
+	        
+	    </div>
+	    
+	</div></a>
+	
+	<a href="#language"><div class="language">
+	    
+	    <i class="fa fa-globe"></i>
+	    
+	</div></a>
+    		
+	<div class="navigation-sub">
+
+	    <ul>
+            <?php
+            
+            switch (LANGUAGE){
+                case "ENG":
+                    $data = getLanguage("navigation",$mysqli);
+                    while($language = $data->fetch_assoc()){
+                        echo "<li><a href=''>".$language['Content_ENG']."</a></li>";
+                    }
+                    break;
+                case "NED":
+                    $data = getLanguage("navigation",$mysqli);
+                    while($language = $data->fetch_assoc()){
+                        echo "<li><a href=''>".$language['Content_NED']."</a></li>";
+                    }
+                    break;
+                case "ESP":
+                    $data = getLanguage("navigation",$mysqli);
+                    while($language = $data->fetch_assoc()){
+                        echo "<li><a href=''>".$language['Content_ESP']."</a></li>";
+                    }
+                    break;
+                case "SRB":
+                    $data = getLanguage("navigation",$mysqli);
+                    while($language = $data->fetch_assoc()){
+                        echo "<li><a href=''>".$language['Content_SRB']."</a></li>";
+                    }
+            }
+            ?>
+        </ul> 
+
+    </div>
+    		
+</div>

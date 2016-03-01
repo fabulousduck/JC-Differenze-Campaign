@@ -11,7 +11,6 @@ $(document).ready(function(){
             
         });
         
-        /*$(navigationSub).slideToggle('show-menu');*/
         $(menuButton).toggleClass('show-menu');
         console.log("Navigation-sub show");
         
