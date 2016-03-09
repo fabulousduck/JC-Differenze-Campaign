@@ -1,7 +1,7 @@
-<div id="login" class="overlay">
+<div id="login" class="login-popup">
 	<div class="popup">
 		<h2>Sign up</h2>
-		<a class="close" href="#">&times;</a>
+	    <div class="close"><i class="fa fa-times"></i></div>
 		<div class="content">
             <form>
                 <div class="block">
@@ -21,10 +21,10 @@
 	</div>
 </div>
 
-<div id="language" class="overlay">
+<div id="language" class="language-popup">
 	<div class="popup">
 		<h2>Language</h2>
-		<a class="close" href="#">&times;</a>
+		<div class="close"><i class="fa fa-times"></i></div>
 		<div class="content">
             <form>
                 <div class="block">

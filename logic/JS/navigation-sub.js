@@ -12,7 +12,7 @@ $(document).ready(function(){
         });
         
         $(menuButton).toggleClass('show-menu');
-        console.log("Navigation-sub show");
         
     });
+
 });

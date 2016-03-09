@@ -1,8 +1,11 @@
 <?php
+        error_reporting(0);
+
     include "../config/PHPconfig.php";
-    $get_var = $_GET['p'];
-    define("CURR_PAGE", $get_var);     
-?>
+    $get_var = $_GET['p'] ?: 'navigation';
+    define("CURR_PAGE", $get_var);
+    $rma = $_GET['rma'];
+ ?>
 
 
 
@@ -29,7 +32,14 @@
                <input type="hidden" name="po" value="<?php echo CURR_PAGE ?>">
                <input type="submit" class="optionsButton" value="new">
             </form>
-           <form action="../logic/PHP/removeData.php" method="post"><input type="submit" class="optionsButton" value="remove"></form>
+            <?php
+            if($rma == "yes"){
+                echo '<a href="?rma=no" method="post"><input type="submit" class="optionsButton red" value="remove"></a>';
+            }else{
+                echo '<a href="?rma=yes" method="post"><input type="submit" class="optionsButton" value="remove"></a>';
+            }
+           
+           ?>
        </div>
 
         <div id="editorPanel">
@@ -44,7 +54,7 @@
                 <div class="gridCell"><p>Confirm</p></div>
             </div>
             <?php
-            include "../logic/PHP/dataRetrieve.php"; 
+                include "../logic/PHP/dataRetrieve.php"; 
             ?>
         </div>
         

@@ -68,7 +68,7 @@
 	    
 	</div></a>
 	
-	<a href="#login"><div class="account-login">
+	<div class="account-login">
 	    
 	    <div class="inner-text">my account 
 	    
@@ -76,13 +76,13 @@
 	        
 	    </div>
 	    
-	</div></a>
+	</div>
 	
-	<a href="#language"><div class="language">
+	<div class="language">
 	    
 	    <i class="fa fa-globe"></i>
 	    
-	</div></a>
+	</div>
     		
 	<div class="navigation-sub">
 

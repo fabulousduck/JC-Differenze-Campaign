@@ -3,6 +3,8 @@
         include "../config/PHPconfig.php";
         error_reporting(0);
         $page = $_GET['p'];
+        $rma = $_GET['rma'] ?: "no";
+        //checks what page its on and queries the corresponding data
         switch ($page) {
             case "navigation":
                 $sql = "SELECT * FROM Content WHERE Partof = 'navigation'";
@@ -20,9 +22,15 @@
                 $sql = "SELECT * FROM Content WHERE Partof = 'navigation'";
         }
         $result = $mysqli->query($sql);
+        //checks if there are any rows from the query
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()){
-            echo "<form action='../logic/PHP/dataSend.php' method='POST'>";
+            if($rma == "yes"){
+                echo "<form action='../logic/PHP/dataDestroy.php' method='POST'>";
+            }else{
+                echo "<form action='../logic/PHP/dataSend.php' method='POST'>";
+            }
+            //puts the data into inputfields in grids in a row.
                 echo "<div class='gridRow'>";
                     echo "<div class='gridCell'><p>".$row['ContentTitle']."</p></div>";
                     echo "<div class='gridCell'><input type='text' name='content_disp_ENG' id='content_disp' value='".$row['Content_ENG']."' class='contentGridCell' maxlength='255'></div>";
@@ -34,7 +42,12 @@
                     echo "<input type='hidden' name='Partof' value='navigation'>";
                     echo "<input type='hidden' name='id' value='".$row['id']."'>";
                     echo "<input type='hidden' name='content_title' value='".$row['ContentTitle']."'>";
-                    echo "<div class='gridCell'><input type='submit' value='edit' class='sGridCell'></div>";
+                    //checks if remove mode is active
+                    if($rma == "yes"){
+                        echo "<div class='gridCell'><input type='submit' value='remove' class='sGridCell'></div>";
+                    }else{
+                         echo "<div class='gridCell'><input type='submit' value='edit' class='sGridCell'></div>";
+                    }
                 echo "</div>";
             echo "</form>";
             }
