@@ -3,55 +3,26 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     /*default font*/
+    
     height: 200%;
     overflow-x: hidden;
 }
-
-
 /*___FONTS___*/
-
-
 /* font-family: 'Open Sans', sans-serif;          DEFAULT */
-
-
 /* font-family: 'Open Sans 600', sans-serif;     BOLD    */
-
-
 /* font-family: 'Open Sans 200', sans-serif;    LIGHT   */
-
-
 /*___COLORS___*/
-
-
 /* Light red       #e74c3c  */
-
-
 /* Dark red        #b43b2f  */
-
-
 /* Green           #27ae60  */
-
-
 /* Dark Green      #219250  */
-
-
 /* Broke n white   #fafafa  */
-
-
 /* Text grey:      #2c2c2c  */
-
-
 /* Light black     #242424  */
-
-
 /*COMMENTS*/
-
-
 /*
 footer color = text color;
 */
-
-
 /* PREFIX TRANSITION
 
     -webkit-transition: all ease-in-out 300ms;
@@ -67,7 +38,6 @@ h1 {
     margin: 0;
     padding: 0;
 }
-
 .header {
     margin: 0;
     width: 100%;
@@ -77,7 +47,6 @@ h1 {
     z-index: 1000;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.01);
 }
-
 
 /*MENU*/
 
@@ -91,8 +60,13 @@ h1 {
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     position: relative;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+    
 }
-
 .menu {
     width: 85px;
     height: 70px;
@@ -105,11 +79,9 @@ h1 {
     cursor: pointer;
     z-index: 1000;
 }
-
 .menu:hover {
     background-color: #f2f2f2;
 }
-
 .menu .menu-button {
     display: inline;
     font-size: 30px;
@@ -121,12 +93,10 @@ h1 {
     color: #242424;
     cursor: pointer;
 }
-
 .menu .menu-button i {
     font-size: 30px;
     color: #242424;
 }
-
 .navigation-sub {
     position: absolute;
     top: 70px;
@@ -136,23 +106,19 @@ h1 {
     z-index: 1000;
     display: none;
 }
-
 .navigation-sub ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .navigation-sub ul li {
     text-align: center;
     height: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .navigation-sub ul li:hover {
     background-color: #EBEBEB;
 }
-
 .navigation-sub ul li a {
     color: #242424;
     text-decoration: none;
@@ -163,14 +129,12 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .logo {
     width: 185px;
     height: 70px;
     display: inline-block;
     text-align: center;
 }
-
 .logo .logo-img {
     width: 160px;
     height: 50px;
@@ -182,61 +146,57 @@ h1 {
     position: relative;
     top: 10px;
 }
-
 .navigation {
     width: auto;
     display: inline-block;
 }
-
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .navigation ul li {
     display: inline-block;
     text-align: center;
     height: 70px;
 }
-
-.navigation ul li:hover {
+.navigation ul li a:hover {
     background-color: #f2f2f2;
 }
-
 .navigation ul li a {
     color: #242424;
     text-decoration: none;
-    display: inline-block;
+    top: 22px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: auto;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
     position: relative;
-    top: 40%;
+    vertical-align: middle;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .language {
     display: inline-block;
     width: 80px;
     height: 70px;
     float: right;
     text-align: center;
+    cursor: pointer;
 }
-
 .language i {
     font-size: 30px;
     position: relative;
     top: 20px;
     color: #242424;
 }
-
 .language:hover {
     background-color: #f2f2f2;
 }
-
 .account-login {
     width: 170px;
     height: 70px;
@@ -245,11 +205,9 @@ h1 {
     display: inline-block;
     cursor: pointer;
 }
-
 .account-login:hover {
     background-color: #f2f2f2;
 }
-
 .account-login .inner-text {
     color: #242424;
     text-transform: uppercase;
@@ -259,7 +217,6 @@ h1 {
     top: 27px;
     width: 100%;
 }
-
 .account-login .arrow {
     position: relative;
     left: 5px;
@@ -270,12 +227,13 @@ h1 {
     -o-transition: all ease-out 300ms;
     transition: all ease-out 300ms;
 }
-
 .account-login:hover .arrow {
     -ms-transform: rotateZ(90deg);
     /* IE 9 */
+    
     -webkit-transform: rotateZ(90deg);
     /* Chrome, Safari, Opera */
+    
     -moz-transform: rotateZ(90deg);
     transform: rotateZ(90deg);
     -webkit-transition: all ease-in 300ms;
@@ -284,7 +242,6 @@ h1 {
     -o-transition: all ease-in 300ms;
     transition: all ease-in 300ms;
 }
-
 .sign-up {
     width: 80px;
     height: 70px;
@@ -293,11 +250,9 @@ h1 {
     text-align: center;
     display: inline-block;
 }
-
 .sign-up:hover {
     background-color: #219250;
 }
-
 .sign-up .inner-text {
     color: #242424;
     text-transform: uppercase;
@@ -308,18 +263,16 @@ h1 {
     top: 27px;
     width: 100%;
 }
-
 .sign-up .arrow {
     position: relative;
     left: 5px;
-    display: inline-block;
+    display: none;
     -webkit-transition: all ease-out 300ms;
     -moz-transition: all ease-out 300ms;
     -ms-transition: all ease-out 300ms;
     -o-transition: all ease-out 300ms;
     transition: all ease-out 300ms;
 }
-
 .sign-up:hover .arrow {
     left: 15px;
     -webkit-transition: all ease-in 300ms;
@@ -328,22 +281,14 @@ h1 {
     -o-transition: all ease-in 300ms;
     transition: all ease-in 300ms;
 }
-
-
 /*END MENU*/
-
-
 /*BODY*/
 
 .container {
     width: 100%;
     height: auto;
 }
-
-
 /*END BODY*/
-
-
 /*POPUP WINDOW*/
 
 .login-popup,
@@ -363,7 +308,6 @@ h1 {
     opacity: 0;
     visibility: hidden;
 }
-
 .popup {
     margin: 70px auto;
     padding: 20px;
@@ -377,17 +321,12 @@ h1 {
     -o-transition: all 1s ease-in-out;
 }
 
-.sign-up .arrow {
-    display: none;
-}
-
 .popup h2 {
     margin-top: 0;
     color: #2c2c2c;
     text-transform: uppercase;
 }
-
-.popup .close {
+.popup .close, .popup .closeTwo {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -400,34 +339,27 @@ h1 {
     font-weight: bold;
     text-decoration: none;
     color: #2c2c2c;
+    cursor: pointer;
 }
-
-.popup .close:hover {
+.popup .close:hover, .popup .closeTwo:hover {
     color: #219250;
 }
-
 .popup .content {
     max-height: 30%;
     overflow: auto;
 }
-
-
 /*END POPUP WINDOW*/
-
-
 /*ADDED CLASSES*/
 
 .show-menu {
     display: block;
     background-color: #f2f2f2;
 }
-
 .navigation-fixed {
     position: fixed;
     top: 0;
     display: inherit;
 }
-
 .display {
     visibility: visible;
     opacity: 1;
@@ -437,8 +369,6 @@ h1 {
     -ms-transition: opacity 500ms;
     -o-transition: opacity 500ms;
 }
-
-
 /*END ADDED CLASSES*/
 
 #introImageContainer {
@@ -449,26 +379,21 @@ h1 {
     /*background-image: url("../img/afb.jpg");*/
     /*background-size: cover;*/
 }
-
 #introLogoContainer {
     width: 270px;
     margin: 0 auto;
 }
-
 #introLogoContainer img {
     width: 100%;
 }
-
 #introTextContainer {
     margin: 0 auto 0px auto;
     height: 130px;
     width: 90%;
 }
-
 #introTextContainer img {
     width: 100%;
 }
-
 #introQuoteContainer {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -477,9 +402,8 @@ h1 {
     margin-top: 20px;
     font-size: 8.5vw;
 }
-
 #introButton {
-    width: 200px;
+    width: 220px;
     height: auto;
     border: 2px solid #fff;
     text-align: center;
@@ -487,16 +411,12 @@ h1 {
     letter-spacing: 1px;
     margin: 20px auto;
 }
-
 #introButton a {
     color: #fff;
     text-decoration: none;
-    padding: 15px 34px;
+    padding: 15px 42px;
 }
-
 #introButton a:hover {}
-
-
 /*________START BODY_______*/
 
 .headingTitle {
@@ -504,10 +424,9 @@ h1 {
     margin-bottom: 40px;
     text-transform: uppercase;
     color: #2c2c2c;
-    font-size: 1.5em;
+    font-size: 6vw;
     text-align: center;
 }
-
 .containerAbout {
     width: 90%;
     margin: 0 auto;
@@ -517,11 +436,9 @@ h1 {
     box-sizing: border-box;
     position: relative;
 }
-
 .containerAbout h1 {
     margin: 20px 0;
 }
-
 .whoAreWe,
 .whyAreWe,
 .whatAreWe,
@@ -530,11 +447,9 @@ h1 {
     margin-bottom: 20px;
     color: #2c2c2c;
 }
-
 .containerAbout i.fa {
-    font-size: 8em
+    font-size: 5em
 }
-
 .containerAbout .text {
     text-align: left;
     letter-spacing: 1px;
@@ -543,35 +458,30 @@ h1 {
     height: auto;
     /*margin: 0 auto;*/
 }
-
 .containerAbout .button {
     height: 21px;
     width: 150px;
-    border: 2px solid #27ae60;
+    border: 3px solid #27ae60;
     padding: 10px 0;
     margin-top: 20px;
 }
-
 .containerAbout .button a {
     color: #27ae60;
     text-decoration: none;
     transition: .5s;
-    padding: 11px 38.3px;
+    padding: 11px 38.4px;
     letter-spacing: 0;
 }
-
 .containerAbout .button a:hover {
     color: #fff;
 }
-
 .whoAreWe,
 .whyAreWe,
 .whatAreWe,
 .whereAreWe {
-    height: 600px;
+    height: 620px;
     position: relative;
 }
-
 .whoAreWe .button,
 .whyAreWe .button,
 .whatAreWe .button,
@@ -579,51 +489,34 @@ h1 {
     position: absolute;
     bottom: 0;
 }
-
 .containerPreview {
     width: 100%;
-    background: #e2e2e2;
-    height: 1475px;
+    background: #efefef;
+    height: 1700px;
     text-align: center;
     padding-top: 20px;
     -moz-box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
     box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
 }
-
-.containerPreview .text {
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
+.containerPreview .title{
+    font-size: 7.5vw;
+    font-weight:600;
 }
-
-.containerPreview .imacPreview img,
-.iphonePreview img {
-    margin-top: 20px;
-    width: 60%;
+.containerPreview .textPreviewLeft, .containerPreview .textPreviewRight{
+     width:90%;
+     height:700px;
+     margin:30px auto;
+     /*background:#444;*/
 }
-
-.containerPreview .button {
-    height: 21px;
-    width: 170px;
-    border: 2px solid #27ae60;
-    padding: 10px 0;
-    margin: 20px auto 0 auto;
+.containerPreview .textPreviewLeft img, .containerPreview .textPreviewRight img{
+    width:100%;
+    margin-bottom: 30px;
 }
-
-.containerPreview .button a {
-    color: #27ae60;
-    text-decoration: none;
-    transition: .5s;
-    padding: 11px 38.3px;
-    letter-spacing: 0;
-    text-transform: uppercase;
+.containerPreview .textPreviewLeft p,.containerPreview .textPreviewRight p{
+    text-align:left;
+    line-height:26px;
 }
-
-.containerPreview .button a:hover {
-    color: #fff;
-}
-
 .containerLanguage {
     height: 600px;
     width: 100%;
@@ -631,8 +524,10 @@ h1 {
     background-size: cover;
     background-position: fixed;
     box-shadow: inset 0 0 0 1000px rgba(44, 44, 44, .2);
+        -moz-box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
 }
-
 .containerLanguage ul {
     list-style: none;
     margin: 0;
@@ -640,15 +535,13 @@ h1 {
     width: 150px;
     margin: -20px auto 0 auto;
 }
-
 .containerLanguage ul li {
     margin: 30px 0;
 }
-
 .containerLanguage ul li img {
     width: 150px;
+    cursor: pointer;
 }
-
 .containerSignup {
     width: 100%;
     height: 500px;
@@ -658,15 +551,11 @@ h1 {
     -webkit-box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
     box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
 }
-
-.containerSignup .openContainer{
-    
+.containerSignup .openContainer {
     width: 100%;
     height: 20px;
     text-align: center;
-    
 }
-
 footer {
     background-color: #e74c3c;
     color: #fff;
@@ -676,19 +565,16 @@ footer {
     -webkit-box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
     box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
 }
-
 footer ul {
     margin: 0;
     padding: 0;
     text-align: center;
 }
-
 footer li {
     list-style-type: none;
     font-weight: 600;
     line-height: 22px;
 }
-
 footer li a {
     color: #fff;
     display: block;
@@ -696,61 +582,49 @@ footer li a {
     padding: 10px 0;
     letter-spacing: 1px;
 }
-
 footer li a:hover {
     color: #e74c3c;
     background: #fff;
 }
-
 footer p a {
     color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
 }
-
 footer p a:hover {
     opacity: 0.5;
 }
-
 .icons {
     width: 230px;
     margin: 0 auto;
 }
-
 .socialButtons {
     height: 50px;
     width: 100%;
     margin-top: 30px;
 }
-
 .socialButtons i {
     color: #fff;
     margin: 0 15px;
     font-size: 50px;
 }
-
 .fa-facebook-official:hover {
     color: #3b5998;
     transition: 0.5s;
 }
-
 .fa-twitter-square:hover {
     color: #55acee;
     transition: 0.5s;
 }
-
 .fa-youtube-square:hover {
     opacity: 0.7;
     transition: 0.5s;
 }
-
 .copyRights {
     text-align: center;
     margin-top: 40px;
     width: 100%;
 }
-
-
 /*___________________Hover effect More info button__ JUST IGNORE xx */
 
 .hvr-bounce-to-top {
@@ -767,7 +641,6 @@ footer p a:hover {
     transition-duration: 0.5s;
     color: #fff;
 }
-
 .hvr-bounce-to-top:before {
     content: "";
     position: absolute;
@@ -788,7 +661,6 @@ footer p a:hover {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
 .hvr-bounce-to-top:hover:before,
 .hvr-bounce-to-top:focus:before,
 .hvr-bounce-to-top:active:before {
@@ -797,7 +669,6 @@ footer p a:hover {
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
-
 .hvr-rectangle-out {
     display: inline-block;
     vertical-align: middle;
@@ -813,7 +684,6 @@ footer p a:hover {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
-
 .hvr-rectangle-out:before {
     content: "";
     position: absolute;
@@ -832,21 +702,17 @@ footer p a:hover {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
 .hvr-rectangle-out:hover,
 .hvr-rectangle-out:focus,
 .hvr-rectangle-out:active {
     color: white;
 }
-
 .hvr-rectangle-out:hover:before,
 .hvr-rectangle-out:focus:before,
 .hvr-rectangle-out:active:before {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
-
-
 /*______________________________________________Start Media Query*/
 
 @media screen and (min-width: 319px) {
@@ -855,7 +721,6 @@ footer p a:hover {
         margin-top: -20px;
     }
 }
-
 @media screen and (max-width: 365px) {
     .logo {
         width: 100px;
@@ -865,7 +730,6 @@ footer p a:hover {
         background-size: 100px;
     }
 }
-
 @media screen and (max-width: 390px) {
     .logo {
         width: 120px;
@@ -875,7 +739,6 @@ footer p a:hover {
         background-size: 105px;
     }
 }
-
 @media screen and (max-width: 401px) {
     #introLogoContainer {
         margin: 0px auto;
@@ -883,13 +746,11 @@ footer p a:hover {
         width: 60%;
     }
 }
-
 @media screen and (min-width: 401px) {
     #introTextContainer {
         width: 90%;
     }
 }
-
 @media screen and (max-width: 460px) {
     .language {
         width: 50px;
@@ -898,7 +759,6 @@ footer p a:hover {
         width: 50px;
     }
 }
-
 @media screen and (min-width: 560px) {
     .sign-up {
         display: inline-block;
@@ -907,16 +767,14 @@ footer p a:hover {
     .language {
         width: 80px;
     }
-    .sign-up .arrow {
-        display: none;
-    }
-}
 
+}
 @media screen and (min-width: 610px) {
     /*.sign-up {*/
     /*    display: inline-block;*/
     /*    width: 180px;*/
     /*}*/
+    
     .language {
         width: 80px;
     }
@@ -924,7 +782,6 @@ footer p a:hover {
         height: 1575px;
     }
 }
-
 @media screen and (min-width: 650px) {
     #introTextContainer {
         height: 120px;
@@ -934,7 +791,6 @@ footer p a:hover {
         font-size: 2em;
     }
 }
-
 @media screen and (max-width: 705px) {
     .account-login {
         display: none;
@@ -946,60 +802,58 @@ footer p a:hover {
         width: 70%;
     }
 }
-
 @media screen and (min-width: 706px) {
+    .sign-up .arrow {
+        display: inline-block;
+    }
+    .headingTitle {
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    font-size: 1.5em;
+    text-align: center;
+}
     .container {
         width: 100%;
         height: auto;
     }
     .containerAbout {
-        width: 100%;
-        height: 1200px;
+        width: 90%;
+        height: 1351px;
+    }
+    
+    .containerAbout .text{
+        width:100%;
     }
     .whoAreWe,
     .whyAreWe,
     .whatAreWe,
     .whereAreWe {
         width: 50%;
-        height: 400px;
+        height: 550px;
         float: left;
         box-sizing: border-box;
         padding: 10px;
     }
-    .textPreview {
-        width: 100%;
-        height: 300px;
+    .containerPreview .title{
+        font-size: 2em;
+        font-weight:600;
     }
-    .textPreviewLeft {
-        width: 100%;
+    .containerPreview .textPreviewLeft, .containerPreview .textPreviewRight{
+         width:50%;
+         height:700px;
+         margin:10px auto;
+         float: left;
     }
-    .textPreviewRight {
-        width: 100%;
+    .containerPreview .textPreviewLeft img, .containerPreview .textPreviewRight img{
+        width:auto;
+        height:50%;
+        margin: 50px auto;
     }
-    .containerPreview .text {
-        text-align: center;
-        width: 70%;
+    .containerPreview .textLeft,.containerPreview .textRight{
+        width:70%;
         margin: 0 auto;
-    }
-    .titleTextIphone {
-        float: left;
-        width: 50%;
-        box-sizing: border-box;
-        padding-top: 40px;
-    }
-    .iphonePreview {
-        float: right;
-        width: 50%;
-    }
-    .imacPreview {
-        float: left;
-        width: 50%;
-    }
-    .titleTextImac {
-        float: left;
-        width: 50%;
-        box-sizing: border-box;
-        padding-top: 70px;
     }
     .containerLanguage {
         height: 250px;
@@ -1022,6 +876,7 @@ footer p a:hover {
     .containerLanguage ul li img {
         width: 150px;
         height: 100px;
+        transition: .7s;
     }
     .containerLanguage ul li img:hover {
         -moz-transform: scale(1.2);
@@ -1065,19 +920,16 @@ footer p a:hover {
         background: none;
     }
 }
-
 @media screen and (max-width: 722px) {
     .account-login {
         display: none;
     }
 }
-
 @media screen and (min-width: 799px) {
     #introTextContainer {
         height: 150px;
     }
 }
-
 @media screen and (min-width: 830px) {
     #introTextContainer {
         height: 220px;
@@ -1090,13 +942,11 @@ footer p a:hover {
     }
     .containerPreview {
         width: 100%;
-        background: #e2e2e2;
         height: 975px;
         text-align: center;
         padding-top: 20px;
     }
-    .containerPreview .text {}
-    .containerPreview .imacPreview img {
+    .containerPreview .text {} .containerPreview .imacPreview img {
         margin-top: 20px;
         width: 50%;
     }
@@ -1108,7 +958,6 @@ footer p a:hover {
         float: right;
     }
 }
-
 @media screen and (max-width: 1195px) {
     .menu {
         display: inline-block;
@@ -1117,14 +966,12 @@ footer p a:hover {
         display: none;
     }
 }
-
 @media screen and (min-width: 1075px) {
     #introTextContainer {
         height: 220px;
         width: 60%;
     }
 }
-
 @media screen and (min-width: 1300px) {
     #introTextContainer {
         height: 150px;
@@ -1133,7 +980,10 @@ footer p a:hover {
     .containerAbout {
         margin: 0 auto;
         width: 80%;
-        height: 1250px;
+        height: 1100px;
+    }
+    .containerAbout .text{
+        width:90%;
     }
     .whoAreWe,
     .whyAreWe,
@@ -1143,7 +993,7 @@ footer p a:hover {
         float: left;
         box-sizing: border-box;
         padding: 10px;
-        height: 500px;
+        height: 420px;
     }
     /*.whoAreWe, .whatAreWe{*/
     /*    border-right: 1px solid #242424;*/
@@ -1151,7 +1001,8 @@ footer p a:hover {
     /*.whoAreWe, .whyAreWe{*/
     /*    border-bottom: 1px solid #242424;*/
     /*}*/
+    
     .containerPreview {
-        height: 830px;
+        height: 880px;
     }
 }

@@ -7,7 +7,7 @@
 <div id="home"></div>
 <div class="container">
     
-    <div class="containerAbout">
+    <div class="containerAbout" id="about">
         <div class="headingTitle" id="about"><h1>about</h1></div>
         <div class="whoAreWe">
             <div class="icon"><i class="fa fa-users"></i></div>
@@ -74,82 +74,44 @@
         </div>
     </div> <!--end containerAbout-->
 
-    <div class="containerPreview"> 
+    <div class="containerPreview" id="preview"> 
         <div class="headingTitle"><h1>preview</h1></div>
         
-        <div class="textPreview">
-            <div class="textPreviewRight">
-                
-                
-                
-                <div class="imacPreview">
-                    
-                    <img src="img/iMac.png"></img>
-                    
-                </div>
-                
-                <div class="iphonePreview">
-                    
-                    <img src="img/iPhone.png"></img>
-                    
-                </div>
+        <div class="textPreviewLeft">
+            <div class="title">What the care taker sees</div>
+            <img src="img/iMac.png"></img>
+            <div class="textLeft">
+            <p>
+            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+            dolor in hendrerit in vulputate velit esse molestie consequat,
+            vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum
+            zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
             </div>
         </div>
-        <!---->
-        <div class="textPreview">
-            <div class="textPreviewLeft">
-                
-                <div class="titleTextImac">
-                    <div class="title"><h1>What the user sees</h1></div>
-                    
-                    <div class="text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                            quis nostrud exerci tation ullamcorper suscipit lobortis nis.
-                            <br>
-                        <p>
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                        </p>
-                        </p>
-                    </div>
-                    
-                     <div class="button"><a class="hvr-bounce-to-top" href="#">download</a></div>
-                    
-                </div>
-                
-                <div class="titleTextIphone">
-                    <div class="title"><h1>What the helper sees</h1></div>
-                    
-                    <div class="text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                        </p>
-                        <br>
-                        <p>
-                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        </p>
-                    </div>
-                    
-                    <div class="button"><a class="hvr-bounce-to-top" href="#">download</a></div>
-                    
-                </div>
-                
-                
+        <div class="textPreviewRight">
+            <div class="title">What the user sees</div>
+            <img src="img/iPhone.png"></img>
+            <div class="textRight">
+            <p>
+            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+            dolor in hendrerit in vulputate velit esse molestie consequat,
+            dolor in hendrerit in vulputate velit esse molestie consequat,
+            vel illum dolore eu feugiat nulla facilisis at vero eros et
+            </p>
             </div>
         </div>
+        
     </div><!--End containerPreview-->
     
-    <div class="containerLanguage">
+    <div class="containerLanguage" id="languages">
         
-        <div class="headingTitle"><h1>Languages</h1></div>
+        <div class="headingTitle"><h1>Available in:</h1></div>
                 
                 <ul class="listLanguage">
                     <li><img src="img/languages/nederlands.png"></img></li>
@@ -159,10 +121,9 @@
                 </ul>
         
     </div>
-    
-    <div class="containerSignup" id="sign-up">
+    <div class="containerSignup">
         
-        <div class="headingTitle"><h1>Sign Up</h1></div>
+        <div class="headingTitle"id="signup"><h1>Sign Up</h1></div>
         
         <div class="openContainer">
             

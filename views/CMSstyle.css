@@ -1,126 +1,74 @@
 *{margin: 0;}
 
-#panelSelector{
-    height: 40px;
-    width: 40%;
-    border: 1px solid #000;
-    float: left;
-    margin-left:30%;
-}
-                        
-.panelSelectorButton{
-    height: 100%;
-    width: 33.3334%;
-    background-color: black;
-    cursor: pointer;
-    float: left;
+#nav{
+    height: 50px;
+    width: 100%;
+    background-color: #B43B2F;
+    float: right;
+
 }
 
-.panelSelectorButton p{
-    text-align: center;
+#spacer{
+    height:50px;
+    width: 100%;
+}
+
+#sideNav{
+    height:100%;
+    width: 20%;
+    background-color: #B43B2F;
+        position: absolute;
+    z-index: 2;
+}
+
+.sideItem{
+    width: 100%;
+    height: 80px;
+    padding-top: 30px;
+    border-top: 2px solid #e74c3c;
+
+
+}
+
+.sideItem p{
+    font-size: 25px;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
-    padding-top: 10px;
-}
-
-
-#editorPanel{
-    height: auto;
-    width: 100%;
-    margin-left: 0%;
-    float: left;
-    border: 1px solid #000;
-    /*margin-top: 100px;*/
-}
-
-.gridRow{
-    width: 100%;
-    height: 30px;
-    border: 1px solid #000;
-}
-.gridCell{
-    height: 100%;
-    width: 12.37%;
-    border: 1px solid #000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 7px;
+    width: 80%;
     float: left;
 }
 
-.gridCell p{
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    text-align: center;
-    padding-top: 5px;
+.sideItem:hover{
+    background-color: #e74c3c;
 }
 
-.contentGridCell{
-    height: 100%;
-    width: 100%;
-    border: 1px solid #000;
-    text-align: center;
+i{
+    float: right;
+    margin-top: 7px;
+    margin-right: 10%;
 }
 
-.taGridCell{
-    height: 100%;
-    width: 100%;
-}
-.sGridCell{
-    height: 100%;
-    width: 100%;
+i:hover{
+    cursor: pointer;
 }
 
-.optionsButton{
+.topButton{
     height: 50px;
     width: 10%;
-    background-color: black;
-    float: left;
-    margin-left: 1%;
-    cursor : pointer;
+    float: right;
 }
 
-.optionsButton p{
-    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    color: white;
-    padding-top: 15px;
+.topButton p{
     text-align: center;
-}
-
-#layoutPanel{
-    height: 400px;
-    width: 70%;
-    margin-left: 15%;
-    /*border: 1px solid #000;*/
-    margin-top: 100px;
-    float: left;
-}
-
-.layoutClass{
-    height: 90%;
-    width: 20%;
-    background-color: grey;
-    float: left;
-    margin-left: 5%;
-    margin-top:2%;
-    border-radius : 20px;
-}
-
-.initial{
-    margin-left:15%;
-}
-
-#optionsMenu{
-    height: 50px;
-    width: 100%;
-    margin-top: 100px;
-    float: left;
-}
-
-.optionsButton{
-    color:white;
+    color: white;
+    padding-top: 12px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    border: none;
 }
 
-.red{
-    background-color: red;
-    
+
+.active{
+    background-color: #e74c3c;
 }

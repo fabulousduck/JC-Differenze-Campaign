@@ -24,7 +24,7 @@
 <div id="language" class="language-popup">
 	<div class="popup">
 		<h2>Language</h2>
-		<div class="close"><i class="fa fa-times"></i></div>
+		<div class="closeTwo"><i class="fa fa-times"></i></div>
 		<div class="content">
             <form>
                 <div class="block">

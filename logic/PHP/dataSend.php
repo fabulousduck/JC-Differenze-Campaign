@@ -14,10 +14,9 @@ $id = $_POST['id'];
 $pageheader = $_POST['pageheader'];
 $query = " UPDATE Content SET ContentTitle='".$contenttitle."', Content_ENG='".$content_ENG."', Content_NED='".$content_NED."',   Content_ESP='".$content_ESP."', Content_SRB='".$content_SRB."',  Text_align='".$text_align."', Font_size='".$font_size."' WHERE id = ".$id."";
 $result = $mysqli->query($query);
-var_dump($query);
-var_dump($result);
 
 
-// header("Location:views/CMSindex.php");
+
+header("Location:../../views/CMSindex.php");
 
 ?>

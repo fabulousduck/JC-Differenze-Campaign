@@ -5,6 +5,7 @@ window.addEventListener("load", function(){
     var languagePopup = document.querySelector(".language-popup");
     var languageButton = document.querySelector(".language");
     var close = document.querySelector(".close");
+    var closeTwo = document.querySelector(".closeTwo");
     
     loginButton.addEventListener('click', function(e){
         
@@ -21,7 +22,13 @@ window.addEventListener("load", function(){
     close.addEventListener('click', function(e) {
         
         loginPopup.classList.remove('display');
+        
+    });
+    
+    closeTwo.addEventListener('click', function(e) {
+
         languagePopup.classList.remove('display');
+        console.log('click');
         
     });
     

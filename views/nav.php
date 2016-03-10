@@ -20,7 +20,7 @@
             
     <div class="logo">
         
-        <a href=""><div class="logo-img">.</div></a>
+        <a href=""><div class="logo-img">&nbsp;</div></a>
     </div>
             
             
