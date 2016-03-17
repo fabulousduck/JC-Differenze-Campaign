@@ -1,11 +1,14 @@
+<?php
+    $language = $_GET['lang'] ?: "ENG";
+    define("LANG",$language);
+?>
+
 <footer class="footer">
         
             <ul class="footerList">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Disclaimer</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Support</a></li>
+                <?php
+                    footerDataGrep(LANG);
+                ?>
             </ul>
             
             
@@ -19,7 +22,7 @@
             </div>
             
             <div class="copyRights">
-                <p>&copy; 2015-2016 All rights Reserved <a href="#">Bemika Software</a></p>
+                <p>&copy; 2015-<?php $date = date(Y); echo $date; ?> All rights Reserved <a href="#">Bemika Software</a></p>
             </div>
         
     </footer>

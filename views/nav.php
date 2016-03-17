@@ -1,6 +1,6 @@
 <?php
-    include "config/PHPconfig.php";
-    error_reporting(0);
+
+    // error_reporting(0);
     $language = $_GET['lang'] ?: "ENG";
     define("LANGUAGE", $language);
     include "logic/PHP/getData.php";
@@ -20,39 +20,14 @@
             
     <div class="logo">
         
-        <a href=""><div class="logo-img">&nbsp;</div></a>
+        <a href="#up"><div class="logo-img">&nbsp;</div></a>
     </div>
             
             
     <div class="navigation">
         <ul>
             <?php
-            
-            switch (LANGUAGE){
-                case "ENG":
-                    $data = getLanguage("navigation",$mysqli);
-                    while($language = $data->fetch_assoc()){
-                        echo "<li><a href=''>".$language['Content_ENG']."</a></li>";
-                    }
-                    break;
-                case "NED":
-                    $data = getLanguage("navigation",$mysqli);
-                    while($language = $data->fetch_assoc()){
-                        echo "<li><a href=''>".$language['Content_NED']."</a></li>";
-                    }
-                    break;
-                case "ESP":
-                    $data = getLanguage("navigation",$mysqli);
-                    while($language = $data->fetch_assoc()){
-                        echo "<li><a href=''>".$language['Content_ESP']."</a></li>";
-                    }
-                    break;
-                case "SRB":
-                    $data = getLanguage("navigation",$mysqli);
-                    while($language = $data->fetch_assoc()){
-                        echo "<li><a href=''>".$language['Content_SRB']."</a></li>";
-                    }
-            }
+                navGrep(LANGUAGE);
             ?>
         </ul> 
 	</div>
@@ -88,32 +63,7 @@
 
 	    <ul>
             <?php
-            
-            switch (LANGUAGE){
-                case "ENG":
-                    $data = getLanguage("navigation",$mysqli);
-                    while($language = $data->fetch_assoc()){
-                        echo "<li><a href=''>".$language['Content_ENG']."</a></li>";
-                    }
-                    break;
-                case "NED":
-                    $data = getLanguage("navigation",$mysqli);
-                    while($language = $data->fetch_assoc()){
-                        echo "<li><a href=''>".$language['Content_NED']."</a></li>";
-                    }
-                    break;
-                case "ESP":
-                    $data = getLanguage("navigation",$mysqli);
-                    while($language = $data->fetch_assoc()){
-                        echo "<li><a href=''>".$language['Content_ESP']."</a></li>";
-                    }
-                    break;
-                case "SRB":
-                    $data = getLanguage("navigation",$mysqli);
-                    while($language = $data->fetch_assoc()){
-                        echo "<li><a href=''>".$language['Content_SRB']."</a></li>";
-                    }
-            }
+                navGrep(LANGUAGE);
             ?>
         </ul> 
 

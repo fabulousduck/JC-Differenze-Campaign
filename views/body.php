@@ -3,24 +3,16 @@
     define("LANG",$language);
 ?>
 
-
-<div id="home"></div>
 <div class="container">
-    
+    <div id="nav1"></div>
     <div class="containerAbout" id="about">
-        <div class="headingTitle" id="about"><h1>about</h1></div>
+        <div class="headingTitle"><h1>about</h1></div>
         <div class="whoAreWe">
             <div class="icon"><i class="fa fa-users"></i></div>
-            <div class="title"><h1>Who are we?</h1></div>
+            <div class="title"><h1><?php echo infoTitleDataGrep(LANG)[0]; ?></h1></div>
             <div class="text">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                    accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi.
+                    <?php echo infoContentDataGrep(LANG)[0]; ?>
                 </p>
             </div>
             <div class="button"><a class="hvr-bounce-to-top" href="#">More Info</a></div>
@@ -28,13 +20,10 @@
         
             <div class="whyAreWe">
             <div class="icon"><i class="fa fa-wheelchair"></i></div>
-            <div class="title"><h1>Why are we?</h1></div>
+            <div class="title"><h1><?php echo infoTitleDataGrep(LANG)[1]; ?></h1></div>
             <div class="text">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                    <?php echo infoContentDataGrep(LANG)[1]; ?>
                 </p>
             </div>
             <div class="button"><a class="hvr-bounce-to-top" href="#">More Info</a></div>
@@ -42,15 +31,10 @@
         
             <div class="whatAreWe">
             <div class="icon"><i class="fa fa-cogs"></i></div>
-            <div class="title"><h1>What are we?</h1></div>
+            <div class="title"><h1><?php echo infoTitleDataGrep(LANG)[2]; ?></h1></div>
             <div class="text">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat,
+                    <?php echo infoContentDataGrep(LANG)[2]; ?>
                 </p>
             </div>
             <div class="button"><a class="hvr-bounce-to-top" href="#">More Info</a></div>
@@ -58,58 +42,106 @@
         
             <div class="whereAreWe">
             <div class="icon"><i class="fa fa-mobile"></i></div>
-            <div class="title"><h1>Where are we?</h1></div>
+            <div class="title"><h1><?php echo infoTitleDataGrep(LANG)[3]; ?></h1></div>
             <div class="text">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                    accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi.
+                   <?php echo infoContentDataGrep(LANG)[3]; ?>
                 </p>
             </div>
             <div class="button"><a class="hvr-bounce-to-top" href="#">More Info</a></div>
         </div>
     </div> <!--end containerAbout-->
 
+<div id="nav2"></div>
     <div class="containerPreview" id="preview"> 
         <div class="headingTitle"><h1>preview</h1></div>
         
         <div class="textPreviewLeft">
-            <div class="title">What the care taker sees</div>
+            <div class="title"><?php echo previewTitleDataGrep(LANG)[0]; ?></div>
             <img src="img/iMac.png"></img>
             <div class="textLeft">
-            <p>
-            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-            dolor in hendrerit in vulputate velit esse molestie consequat,
-            vel illum dolore eu feugiat nulla facilisis at vero eros et
-            accumsan et iusto odio dignissim qui blandit praesent luptatum
-            zzril delenit augue duis dolore te feugait nulla facilisi.
-            </p>
+                <p>
+                    <?php echo previewContentDataGrep(LANG)[0]; ?>
+                </p>
             </div>
         </div>
         <div class="textPreviewRight">
-            <div class="title">What the user sees</div>
+            <div class="title"><?php echo previewTitleDataGrep(LANG)[1]; ?></div>
             <img src="img/iPhone.png"></img>
             <div class="textRight">
-            <p>
-            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-            dolor in hendrerit in vulputate velit esse molestie consequat,
-            dolor in hendrerit in vulputate velit esse molestie consequat,
-            vel illum dolore eu feugiat nulla facilisis at vero eros et
-            </p>
+                <p>
+                    <?php echo previewContentDataGrep(LANG)[1]; ?>        
+                </p>
             </div>
         </div>
         
     </div><!--End containerPreview-->
     
-    <div class="containerLanguage" id="languages">
+ 
+<div id="nav3"></div>    
+    <div class="containerSignup">
+        
+        <div class="headingTitleSignup" id="sign-up"><h1>Sign Up</h1></div>
+        <div class="openContainerButton"><i class="fa fa-arrow-circle-down"></i></div>
+        
+        <div class="openContainer">
+            
+            <div class="signUpForm">
+                <form action="index.html" method="post">
+
+                    
+                    <div class="leftForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                          
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email">
+                          
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="user_password">
+                        <label for="password">Confirm password:</label>
+                        <input type="password" id="password" name="user_password">
+                          
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="user_phone">
+                    </div>
+                
+                    <div class="rightForm">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="user_address">
+                          
+                        <label for="zipcode">Zipcode:</label>
+                        <input type="text" id="zipcode" name="user_zipcode">
+                          
+                        <label for="country">Country:</label>
+                        <input type="text" id="Country" name="user_country">
+                          
+                        <label for="language">Language:</label>
+                        <select id="langauge" name="user_language">
+                                <option value="dutch">Dutch</option>
+                                <option value="russian">Russian</option>
+                                <option value="spanish">Spanish</option>
+                                <option value="english">English</option>
+                        </select>
+                          
+                        <label for="birth">Birthday:</label>
+                        <input type="date" id="birth" name="user_birth" value="01-12-1983">
+                    </div>
+                    
+                </form>  
+                
+                <div class="centerItems">
+                    <div class="submitButton"><button type="submit">Sign up</button></div>
+                    By submitting this form you agree to Bemika Software's <a href="">Terms of Use</a>.
+                </div>
+            </div>
+        
+        </div>
+        
+    </div><!--end containerSignup-->
+
+<div id="nav5"></div>
+       <div class="containerLanguage" id="languages">
         
         <div class="headingTitle"><h1>Available in:</h1></div>
                 
@@ -121,16 +153,6 @@
                 </ul>
         
     </div>
-    <div class="containerSignup">
-        
-        <div class="headingTitle"id="signup"><h1>Sign Up</h1></div>
-        
-        <div class="openContainer">
-            
-            X
-            
-        </div>
-        
-    </div><!--end containerSignup-->
+    
     
 </div> <!--end container-->

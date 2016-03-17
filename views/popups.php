@@ -1,20 +1,26 @@
+<?php
+
+?>
+
 <div id="login" class="login-popup">
 	<div class="popup">
-		<h2>Sign up</h2>
+		<h2>Log In</h2>
 	    <div class="close"><i class="fa fa-times"></i></div>
 		<div class="content">
             <form>
                 <div class="block">
-                    <label>Simple label</label>
-                    <input type="text" />
+                    <label>Username</label>
+                    <input type="text"/>
                 </div>
                 <div class="block">
-                    <label>Label with more text</label>
-                    <input type="text" />
+                    <label>Password</label>
+                    <input type="password"/>
                 </div>
-                <div class="block">
-                    <label>Short</label>
-                    <input type="text" />
+                <div class="btn">
+                    <a href="#"> Log In</a>
+                </div>
+                <div class="href">
+                    <a href="#"><span>Forgot Password?</span></a>
                 </div>
             </form>
 		</div>
@@ -26,20 +32,7 @@
 		<h2>Language</h2>
 		<div class="closeTwo"><i class="fa fa-times"></i></div>
 		<div class="content">
-            <form>
-                <div class="block">
-                    <label>Simple label</label>
-                    <input type="text" />
-                </div>
-                <div class="block">
-                    <label>Label with more text</label>
-                    <input type="text" />
-                </div>
-                <div class="block">
-                    <label>Short</label>
-                    <input type="text" />
-                </div>
-            </form>
+                <?php echo langDataGrep(); ?>
 		</div>
 	</div>
 </div>

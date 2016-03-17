@@ -11,23 +11,71 @@
 #spacer{
     height:50px;
     width: 100%;
+    background-image: url("../img/remostep-logo.png");
 }
 
 #sideNav{
     height:100%;
     width: 20%;
     background-color: #B43B2F;
-        position: absolute;
+    position: absolute;
     z-index: 2;
+    overflow: auto;
 }
+
+#editorPanel{
+    height: 95%;
+    width: 80%;
+    /*background-color: green;*/
+    float: right;
+}
+
+#languageStrip{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-right: 3px solid #000;
+    overflow: auto;
+}
+
+#subLanguageStrip{
+    height: 100%;
+    width: 50%;
+    float: left;
+    
+}
+
+
+.languageStripButton{
+    height: 100%;
+    width: 10%;
+    background-color: #fff;
+    float: left;
+    /*border: 2px solid #e74c3c;*/
+}
+
+.languageStripButton p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.bigButton{
+    width: 100%;
+}
+
+.bigClick{
+    width: 80%;
+    float: left;
+}
+
 
 .sideItem{
     width: 100%;
     height: 80px;
     padding-top: 30px;
     border-top: 2px solid #e74c3c;
-
-
 }
 
 .sideItem p{
@@ -38,6 +86,8 @@
     margin-top: 7px;
     width: 80%;
     float: left;
+    cursor: pointer;
+
 }
 
 .sideItem:hover{
@@ -46,7 +96,7 @@
 
 i{
     float: right;
-    margin-top: 7px;
+    margin-top: 10px;
     margin-right: 10%;
 }
 
@@ -63,12 +113,201 @@ i:hover{
 .topButton p{
     text-align: center;
     color: white;
-    padding-top: 12px;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
+.firstLeft{
+    margin-right: 10%;
+}
+
+.pdTop{
+    padding-top: 15px;
+}
+
+
 
 .active{
-    background-color: #e74c3c;
+    background-color: #27ae60;
+}
+
+.trash{
+    float: right;
+    margin-right: 10%;
+}
+
+.btn{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+
+
+
+#dataPanelBig{
+    /*margin-top: 100px;*/
+    height: 800px;
+    width: 95%;
+    margin-left: 2.5%;
+    border: 3px solid #000;
+    margin-top: 20px;
+}
+
+#dataPanelTop{
+    height: 50px;
+    width:100%;
+    border-bottom: 3px solid #000;
+    float: left;
+}
+
+#dataPanelTop p{
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dataPanelTextarea{
+    height: 90%;
+    width: 90%;
+    float: left;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
+    border: none;
+    font-size: 20px;
+}
+
+.btnSpec{
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.addLanguage{
+    width: 20%;
+}
+
+.addLanguage p{
+    padding-top: 5px;
+    font-size: 19px;
+    font-family:'Open Sans', sans-serif;
+    color: grey;
+    float: left;
+    width: 70%;
+}
+
+.fr{
+    float: left;
+    padding-top: 7px;
+    color: grey;
+}
+
+.grey{
+    color: grey;
+    float: right;
+}
+
+.confirm{
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+#addLanguageField{
+    position: absolute;
+    z-index: 4;
+    height: 100px;
+    width: 40%;
+    display: none;
+    background-color: white;
+    border: 3px solid #000;
+    margin-top: 300px;
+    margin-left: 30%;
+}
+
+#addLanguageFieldTop{
+    height: 30px;
+    width:100%;
+    border-bottom: 1px solid #000;
+}
+
+#addLanguageFieldTop p{
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#newLangInput{
+    height: 50px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 3px solid #000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+}
+
+#maskLayer{
+    height: 90vh;
+    width: 80%;
+    position: absolute;
+    z-index: 3;
+    background-color: #000;
+    opacity: 0.4;
+    display: none;
+}
+
+#close{
+    cursor: pointer;
+}
+
+#selectMssg{
+    height: 100px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 320px;
+}
+
+#selectMssg p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 55px;
+    color: #0066CC;
+    opacity: 0.3;
+}
+
+
+#content_title_edit{
+    height: 100%;
+    border: none;
+    border-right: 3px solid #000;
+    width: 20%;
+    text-align:center;
+    font-size: 20px;
+}
+
+#linkField{
+    float: right;
+    border: none;
+    border-left: 3px solid #000;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif ;
+    width: 10%;
+    height: 100%;
+}
+
+.small{
+    width: 20%;
+    float: left;
 }

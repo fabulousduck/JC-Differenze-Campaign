@@ -1,18 +1,14 @@
-$(document).ready(function(){
+window.addEventListener("load", function(){
     
     var menuButton = document.querySelector(".menu");
     var navigationSub = document.querySelector(".navigation-sub");
     
-    $(menuButton).on('click', function(){
+    menuButton.addEventListener('click', function(e){
         
-        $('show-menu').ready(function(){
-            
-            $(navigationSub).slideToggle('fast');
-            
-        });
-        
-        $(menuButton).toggleClass('show-menu');
+        console.log('hoiasdasd');
+        navigationSub.classList.toggle('show-menu');
         
     });
+
 
 });

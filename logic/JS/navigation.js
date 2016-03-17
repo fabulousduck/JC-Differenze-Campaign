@@ -14,7 +14,7 @@ $(document).ready(function () {
     
     $(function() {
      
-        // grab the initial top offset of the navigation 
+        // grab the initial top offset of   the navigation 
         var sticky_navigation_offset_top = $('.menu-wrapper').offset().top;
          
         // our function that decides weather the navigation bar should have "fixed" css position or not.
@@ -27,6 +27,7 @@ $(document).ready(function () {
             // otherwise change it back to relative
             if (scroll_top > sticky_navigation_offset_top) { 
                 $('.menu-wrapper').css({ 'position': 'fixed', 'top':0, 'left':0 });
+                //$('#home').css({'padding-top': '100px'})
             } else {
                 $('.menu-wrapper').css({ 'position': 'relative' }); 
             }   

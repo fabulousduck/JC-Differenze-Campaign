@@ -1,22 +1,28 @@
 <?php
 include "../../config/PHPconfig.php";
-
-
-$contenttitle = $_POST['content_title'];
-$content_ENG = $_POST['content_disp_ENG'];
-$content_NED = $_POST['content_disp_NED'];
-$content_ESP = $_POST['content_disp_ESP'];
-$content_SRB = $_POST['content_disp_SRB'];
-$text_align = $_POST['ta_disp'];
-$font_size = $_POST['fs_disp'];
-$partof = $_POST['Partof'];
+error_reporting(0);
 $id = $_POST['id'];
-$pageheader = $_POST['pageheader'];
-$query = " UPDATE Content SET ContentTitle='".$contenttitle."', Content_ENG='".$content_ENG."', Content_NED='".$content_NED."',   Content_ESP='".$content_ESP."', Content_SRB='".$content_SRB."',  Text_align='".$text_align."', Font_size='".$font_size."' WHERE id = ".$id."";
+$language = $_POST['updateLang'];
+$full_col = "Content_".$language;
+$full_col_title = "content_".$language."_Title";
+$updateDatatitle = $_POST['u_title'];
+$updateDataContent = $_POST['u_input'];
+$updateDataLink  = $_POST['u_link'] ?: 'none';
+$rethead = $_POST['rethead'];
+$page = $_POST['p'];
+
+
+             
+if($page = 'navigation'){
+    $query = " UPDATE Content SET ".$full_col_title."='".$updateDatatitle."', ".$full_col."='".$updateDataContent."', link ='".$updateDataLink."' WHERE id = ".$id."";
+
+}else{
+    $query = " UPDATE Content SET ".$full_col_title."='".$updateDatatitle."', ".$full_col."='".$updateDataContent."' WHERE id = ".$id."";
+}
 $result = $mysqli->query($query);
 
 
 
-header("Location:../../views/CMSindex.php");
+header("Location:../../views/CMSindex.php".$rethead);
 
 ?>
