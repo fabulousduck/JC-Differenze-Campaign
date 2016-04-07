@@ -34,6 +34,6 @@ $user = $response->getGraphUser();
 // echo "<img src=".$user['picture']['url']." /> ";
 
  ?>
- 
- 
+
+
 
