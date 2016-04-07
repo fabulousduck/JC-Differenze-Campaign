@@ -23,14 +23,21 @@
 ?>
 
  <html>
-   <head>
-     <link rel="stylesheet" href="css/appStyle.css">
-   </head>
+    <head>
+        <link rel="stylesheet" href="css/appStyle.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
    <body>
      <nav id="fb-nav">
          <div class="first fb-button">
             <a href=" <?php echo $loginUrl ?> ">login</a>
          </div>
      </nav>
+    <div id="ageField">
+       <div id="ten" class="ageBlock ageBlockfirst"><p class="">10+</p></div>
+        <div id="etn" class="ageBlock"><p class="">18+</p></div>
+    </div>
+    <div id="errorBox"></div>
+    <script src="logic/JS/app-ageHandler.js"></script>
    </body>
  </html>
