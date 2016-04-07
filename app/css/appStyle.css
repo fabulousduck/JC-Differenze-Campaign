@@ -1,0 +1,38 @@
+@font-face {
+    font-family: fb;
+    src: url(../assets/font/FACEBOLF.OTF);
+}
+
+
+*{
+    margin: 0;
+}
+
+#fb-nav{
+    height: 120px;
+    width: 100%;
+    background-color :#4c66a4;
+}
+
+#fb-nav a{
+    text-decoration: none;
+        font-size: 3em;
+    font-family: fb;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 40px; 
+    display: block;
+}
+
+
+
+.first{
+    margin-left: 2%;
+}
+
+.fb-button{
+    height: 100%;
+    width: 10%;
+    float: left;
+}
