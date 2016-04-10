@@ -37,7 +37,10 @@
        <div id="ten" class="ageBlock ageBlockfirst"><p class="">10+</p></div>
         <div id="etn" class="ageBlock"><p class="">18+</p></div>
     </div>
+    <div id="quizField">
+    </div>
     <div id="errorBox"></div>
     <script src="logic/JS/app-ageHandler.js"></script>
-   </body>
+    <script src="logic/JS/httpRunner.js"></script>
+</body>
  </html>
