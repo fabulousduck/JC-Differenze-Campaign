@@ -1,0 +1,105 @@
+SCHRIFTELIJK ADVIES
+
+    Eisen en wensen van de klant
+
+        De klant wil uit de campagne meer bekentheid onder de jongeren (zijn
+        doelgroep).
+        Hierbij wil de klant een website hebben waar de jongeren kunnen komen om
+        meer info te vinden over de dienst.
+        De website moet voor 2 leeftijds groepen worden ingedeeld, voor kinderen
+        van 10 tot 18, en 18+.
+        Ook wil de klant een mobile web app hebben waar mensen uit de doelgroep
+        een quiz kunnen doen om er achter te komen waar ze wel goed in zijn en
+        wat hun talenten zijn.
+        Deze app moet gebruik maken van facebook zodat de gebruikers kunnen
+        inloggen met Facebook, en het hierdoor makkelijker word om data over de
+        gebruiker te krijgen.
+
+    MoSCoW
+
+        Must :
+
+            Website
+            App
+            Facebook login
+            Google analytics
+
+        Should :
+
+            leeftijds secties in de website
+            website responsive
+
+        Could :
+
+            template engine voor App.
+
+        Wont :
+
+            leeftijds secties in mobile app
+
+
+    haalbaarhijd wensen
+
+        Website/app :
+
+                Wat de klant voor eisen stelt voor de website is goed te doen in
+                de tijd die we er voor hebben gekregen en het zla ook zeker een
+                voldoende eindproduct opleveren.
+
+                De app is ook zeer goed te doen in de opgegeven tijd.
+                De analytics die in de app moeten zullen wat research vereisen
+                maar zal ook zeker geen probleem moeten zijn voor de deverloper
+                van de app.
+
+                De wens voor 2 verschillende secties van de website voor de
+                leeftijds groepen is een grote taak sinds het 2 verschillende
+                designs vereist voor de website.
+                Hiervoor zullen we de meeste tijd nodig hebben.
+
+
+    Voor en nadelen van de wensen
+
+        Website/app :
+
+                voordelen :
+
+                    De app hoeft relatief weinig inhoud te hebben naast de quiz
+                    zelf en de facebook login functie, dus hier hoeft niet veel
+                    tijd in gestoken te worden.
+
+                    De website heeft ook een vrij simpele layout dus kan snel in
+                    elkaar worden gezet.
+                    Dit bespaart veel development tijd.
+
+                ndadelen :
+
+                    De website heeft 2 verschillende versies voor verschillende
+                    leeftijds groepen, dus hier zullen 2 designs voor moeten
+                    gemaakt worden. ook zullen die gemaakt moeten worden.
+                    dit kost veel tijd voor de IV'ers
+
+
+
+    uren/kosten opgaven :
+
+            //TODO
+
+
+    grove planning op basis van ontwerp, realisatie, implementatie en
+    onderhoud/beheer fase :
+
+        sprint 0 : basis documentatie gedaan en eerste gesprek met odrachtgever
+                    gehad. Basis design voor website gedaan en ideeen
+                    gebrainstormt. Ontwikkel omgeving ingericht
+
+        sprint 1 : begonnen aan Website te maken. 2de gesprek met de opdracht
+                    gever. mockups maken voor website en app
+
+        sprint 2 : Realisatie app. Realisatie 2de sectie van website.
+                    alle design documenten af.
+
+        sprint 3 : ?
+
+        sprint 4 : ?
+
+

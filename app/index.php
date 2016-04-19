@@ -25,21 +25,33 @@
  <html>
     <head>
         <link rel="stylesheet" href="css/appStyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
    <body>
      <nav id="fb-nav">
-         <div class="first fb-button">
+        <div class="fltLeft fb-button">
+            <p>Facebook</p>
+        </div>
+        <div class="fltRight fb-button">
             <a href=" <?php echo $loginUrl ?> ">login</a>
-         </div>
-     </nav>
-    <div id="ageField">
-       <div id="ten" class="ageBlock ageBlockfirst"><p class="">10+</p></div>
-        <div id="etn" class="ageBlock"><p class="">18+</p></div>
+        </div>
+        <i class="fa fa-user fa-5x fa-inverse fltRight imrgtop" aria-hidden="true"></i>
+    </nav>
+    <div id="titleOne">
+        <i><p>wat is jou talent ?</p></i>
     </div>
-    <div id="quizField">
+    <div id="explainSection">
+        <div id="explainOne">
+            <i><p>In deze app ga je een quiz maken</p></i>
+        </div>
+        <div id="explainTwo">
+            <i><p>Dankzij deze quiz kunnen wij samen met jou,<br>erachter komen wat jou talent is.</p><i>
+        </div>
     </div>
-    <div id="errorBox"></div>
+    <div id="continueButton">
+        <p>doe de quiz</p>
+    </div>
     <script src="logic/JS/app-ageHandler.js"></script>
     <script src="logic/JS/httpRunner.js"></script>
 </body>

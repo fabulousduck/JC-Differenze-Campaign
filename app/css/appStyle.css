@@ -9,52 +9,29 @@
 }
 
 body {
-    background-color: #62B1F6;
-}
-
-#ageField{
-    height: 300px;
-    width: 100%;
-    border: 1px solid #000;
-    float: left;
-}
-
-.ageBlock{
-    height: 100%;
-    width: 30%;
-    float: left;
-    transition: 0.5s;
-    background-color: #62B1F6;
-}
-
-.ageBlock p{
-    font-family: 'Open Sans';
-    font-size: 50px;
-    text-align: center;
-    color: #fff;
-    padding-top: 100px;
+    background-color: #fff;
 }
 
 
-
-.ageBlockFirst{
-    margin-left: 20%;
-    border-right: 3px solid #fff;
-}
-
-.activeAge{
-    background-color: white;
-    color : black;
-}
-
-.activeAgeP{
-   color: black;
-}
 
 #fb-nav{
     height: 120px;
     width: 100%;
     background-color :#4c66a4;
+}
+
+.fltRight{
+    float: right;
+    margin-right: 5%;
+}
+
+.fltLeft{
+    float: left;
+    margin-left: 5%;
+}
+
+.imrgtop{
+    margin-top: 20px;
 }
 
 #fb-nav a{
@@ -69,6 +46,17 @@ body {
 }
 
 
+#fb-nav p{
+    text-decoration: none;
+    font-size: 3em;
+    font-family: fb;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    display: block;
+}
+
 .first{
     margin-left: 5%;
 }
@@ -76,20 +64,82 @@ body {
 .fb-button{
     height: 100%;
     width: 10%;
-    float: left;
+
 }
 
-#errorBox{
-    height: 100px;
+#titleOne{
     width: 100%;
-    border: 1px solid #000;
-    margin-top: 40px;
-    float: left;
+    height: auto;
+    margin-top: 50px;
 }
 
-#errorBox p{
-    font-family: 'Open sans';
+#titleOne p{
     text-align: center;
-    margin-top: 30px;
-    font-size: 25px;
+    font-family: fb;
+    border-bottom: 1px solid #62b1f6;
+    font-size: 50px;
+    margin-top: 50px;
+    width:80%;
+    margin: 20px auto;
+}
+
+#explainSection{
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#explainOne{
+    height: 20%;
+    width:100%;
+}
+
+#explainOne p{
+    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#explainTwo{
+    height: 40%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#explainTwo p{
+    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #62b1f6;
+}
+
+#continueButton{
+    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    background-color: rgb(49,183,222);
+    border: 5px solid grey;
+}
+
+#continueButton p{
+    font-size: 80px;
+    font-family: fb;
+    text-align: center;
+    color: #fff;
+    margin-top: 110px;
+}
+
+
+#footer{
+   height: 50px;
+   width :100%;
+   border: 1px solid #000;
+   position: absolute;
+   bottom:0;
 }
