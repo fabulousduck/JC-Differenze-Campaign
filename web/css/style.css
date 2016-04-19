@@ -2,13 +2,708 @@
     font-family: Chalkboard;
     src: url(../font/chalkboard.ttf);
 }
+/*
 
+BLAUW: #37c3e3;
+GRIJS: #6d6e71;
+
+*/
 body{
-   padding:0;margin:0;
+   padding:0;
+   margin:0;
    background:#fafafa;
    font-family: sans-serif;
+   overflow-x: hidden;
 }
 
-#header h1{
+h1,h2{
     font-family: chalkboard;
+    letter-spacing: 3px;
+}
+span{
+    color:#37c3e3;
+    font-style: italic;
+}
+/* HEADER SLIDER */
+
+#slide-window{
+    visibility: hidden;
+    display: none;
+}
+/* END HEADER SLIDER */
+.clear{
+    clear: both;
+}
+#wrapperHeader{
+    width:100%;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    background:url('../images/social.jpg');
+    background-position: center center;
+    background-size:cover;
+    box-shadow: inset 0 0 0 10000px rgba(0,0,0, 0.6);
+}
+#wrapperHeader h2{
+    font-size: 7vw;
+    margin: 15px 0;
+}
+#wrapperHeader img{
+    width:90%;
+    margin-top: 60px;
+}
+#container{
+    background:url('../images/pattern-white.png');
+    height:5000px;
+    width:100%;
+    padding-top: 50px;
+}
+.ageButtons{
+    width: 40%;
+    height: 120px;
+    margin: 0 5%;
+    float: left;
+    line-height: 60px;
+    background-color:#37c3e3;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    border: 3px solid #6d6e71;
+    font-size:140%;
+}
+.ageButtons h1{
+    /*margin-top: 23%;*/
+}
+
+/* NAVIGATION MENU */
+
+.navigation{
+    width:100%;
+    height: 50px;
+    background-color:#37c3e3;
+    display: block;
+    float: left;
+}
+
+.navigationWrapper{
+    width: 90%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.logo img{
+    height: 35px;
+    margin-top: 8px ;
+}
+.navigation .navigationWrapper .logo{
+    height: 50px;
+    float: left;
+}
+
+.navigation .navigationWrapper .menu{
+    width: auto;
+    height: 50px;
+    float: right;
+    display: inline-block;
+}
+
+.navigation .navigationWrapper .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navigation .navigationWrapper .menu ul li{
+    display: inline-block;
+    position: relative;
+    height: 80px;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+
+.navigation .navigationWrapper .menu ul li a{
+    width:auto;;
+    color:#fff;
+    text-decoration: none;
+    padding: 16px 20px;
+    display: inline-block;
+}
+
+.fixed {
+  position: fixed;
+  top:0;
+  z-index: 100000;
+}
+
+/* END NAVIGATION MENU */
+
+#container h1, #container h2{
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    text-align:center;
+    font-size:7vw;
+}
+#container h4{
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3.3vw;
+}
+#wrapperContainer{
+    width: 80%;
+    margin:0 auto;
+}
+
+.line1{
+    margin: 0 auto;
+    width: 40%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    display: block;
+    
+    -ms-transform: rotate(35deg); /* IE 9 */
+    -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(5deg); /* Firefox */ 
+    transform: rotate(35deg);
+    
+}
+
+.line2{
+    margin: 0 auto;
+    width: 40%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    display: block;
+    
+    -ms-transform: rotate(-35deg); /* IE 9 */
+    -webkit-transform: rotate(-35deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(-35deg); /* Firefox */ 
+    transform: rotate(-35deg);
+}
+
+.center{
+    text-align: center;
+    font-size: 175%;
+    line-height: 35px;
+}
+.hetTeam{
+    height: auto;
+}
+#slideLeft,#slideRight,#fadeIn,#fadeIn2,#fadeIn3, #slideLeft2,#fadeIn4,#slideRight2,#fadeIn5,#slideLeft3,#fadeIn6,#slideRight3,#fadeIn7, #slideLeft4,#fadeIn8,#slideRight4,#slideLeft5,#fadeIn9,#fadeIn10,#slideRight5{
+    visibility: hidden;
+}
+.wings img{
+    width:100%;
+}
+.margin-o{
+    margin-top:0 !important;
+}
+
+.hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
+    width:75%;
+    border-left: 1px solid #000;
+    text-align: left;
+    padding-left: 20px;
+    margin:0;
+    font-size:0.5em;
+    line-height: 20px;
+    float: right;
+}
+.hetTeam, #ontstaan, #profesionals, #onsIdee, #team, #werkwijze{
+    margin: 20px 0;
+}
+i.fa{
+    font-size:1.2em;
+}
+#werkwijze img{
+    width:40px;
+}
+#youtube{
+    width: 100%;
+    height: 50px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 40.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.leftContent{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    float: left;
+    display: block;
+    
+}
+
+.rightContent{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    float: left;
+    display: block;
+}
+
+#buttons{
+    width:90%;
+    height: 50px;
+    margin:0 auto;
+}
+#buttoons a{
+    height: 50px;
+    background: #37c3e3;
+    color:#fff;
+    text-decoration: none;
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-top: 10px;
+}
+#buttoons a:hover, #buttoons a:active{
+    background: #6d6e71;
+    transition: ease 0.7s;
+}
+#buttoons a:first-child{
+    margin-right:0;
+}
+#buttoons a:last-child{
+    margin-left: 0;
+}
+
+@media screen and (min-width: 500px ){
+    .ageButtons{
+        height: 200px;
+        line-height: 120px;
+    }
+}
+@media screen and (min-width:766px){/*Tablet*/
+    
+    .ageButtons h1{
+        font-size: 300%;
+    }
+    #wrapperHeader{
+        width:70%;
+        background: none;
+        box-shadow:none;
+    }
+    #wrapperHeader img{
+        width:50%;
+    }
+    #wrapperHeader h2{
+        font-size: 2.5em;
+    }
+    
+.slide {
+      list-style:none;
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      height: 100%;
+      background: #ccc;
+      text-align: center;
+      line-height: 300px; 
+      background-size: cover; 
+      background-position:50% 50%;
+      color:#fff;
+      -webkit-transform: translate3d(0px,0px,0px);
+      visibility:hidden;
+      -webkit-transform-style: preserve-3d;
+      box-shadow: inset 0 0 0 10000px rgba(0,0,0, 0.6);
+}
+.alive { visibility:visible; }
+
+#slide-window {
+  display: block;
+  position:absolute;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  top:0px;
+  left:0px;
+  z-index: -10;
+  }
+
+#slides {
+  height:100%;  
+  position:absolute;
+  margin:0px;
+  padding:0px;
+  -webkit-transform: translate3d(0px,0px,0px);
+  transform: translate3d(0px,0px,0px);
+  transition: all 0.66s ease; -webkit-transition: all 0.66s ease; 
+  }
+  #container h1, #container h2{
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    text-align:center;
+    font-size:250%;
+}
+#container h4{
+    font-size:120%;
+    margin-bottom: 100px;
+}
+
+.navigationWrapper{
+    width: 80%;
+}
+
+i.fa{
+    font-size:3em;
+    margin-top: 20px;
+    width:15%;
+    display: inline-block !important;
+}
+.hetTeam{
+    width:600px;
+    height: 120px;
+    margin-bottom: 150px;
+}
+.tachtig{
+    width:80%;
+}
+.twintig{
+    width:20%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+#ontstaan{
+    width:500px;
+    margin-bottom: 120px;
+    height: auto;
+}
+#ontstaan p{
+    margin-top:40px;
+}
+#profesionals{
+    width:750px;
+    margin-bottom: 120px;
+    height: auto;
+}
+#profesionals i{
+    font-size:4em;
+    margin-top: 45px;
+}
+#onsIdee{
+    width:750px;
+    margin-bottom: 120px;
+    height: auto;
+}
+#onsIdee i{
+    font-size:5em;
+}
+#team{
+    width: 775px;
+    margin-bottom: 150px;
+    height: auto;
+}
+#werkwijze{
+    width:600px;
+    height:auto;
+    margin-bottom: 150px;
+}
+#werkwijze img{
+    height: 120px;
+    width: auto;
+}
+#werkwijze p{
+    margin: 0;
+}
+.wings{
+    text-align:center;
+}
+.wings img{
+    width:80%;
+    margin:0 auto;
+}
+.hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
+    font-size:1em;
+    border:none;
+    line-height: 35px;
+    text-align:center;
+    margin:20px 0;
+}
+.hetTeam p, #profesionals p,#team p{
+    float:left;
+}
+#ontstaan p,#onsIdee p, #werkwijze p{
+    float: right;
+}
+#werkwijze p{
+    margin: 0;
+}
+#wachten{
+    width:700px;
+    margin-bottom: 120px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#youtube{
+    height: 80vh;
+    width:100%;
+}
+.wijHebben{
+    width:600px;
+    margin-bottom: 120px;
+    margin-top: 50px;
+}
+.dankzij{
+    width:600px;
+    margin-bottom: 120px;
+}
+
+/* NAVIGATION MENU */
+
+.navigation{
+    width:100%;
+    height: 80px;
+    background-color:#37c3e3;
+    display: block;
+    float: left;
+}
+
+.navigationWrapper{
+    width: 75%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.logo img{
+    height: 55px;
+    margin-top: 15px ;
+}
+.navigation .navigationWrapper .logo{
+    height: 80px;
+    float: left;
+}
+
+.navigation .navigationWrapper .menu{
+    width: auto;
+    height: 80px;
+    float: right;
+    display: inline-block;
+}
+
+.navigation .navigationWrapper .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navigation .navigationWrapper .menu ul li{
+    display: inline-block;
+    position: relative;
+    height: 80px;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+
+.navigation .navigationWrapper .menu ul li a{
+    display: block;
+    width: auto;
+    height: 50px;
+    padding: 30px 0 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+#buttons{
+    width:70%;
+    height: 50px;
+}
+#buttoons a{
+    height: 100px;
+    background: #37c3e3;
+    color:#fff;
+    text-decoration: none;
+    display:block;
+    width:49%;
+    box-sizing:border-box;
+    padding: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100px;
+    font-size:2em;
+}
+#buttoons a:first-child{
+    margin-right: 5px;
+}
+#buttoons a:last-child{
+    margin-left: 5px;
+}
+
+}
+@media screen and (min-width:1100px){ /*Laptop*/
+
+.leftContent, .rightContent{
+    width: 50%;
+    height: 500px;
+    background-color: red;
+    float: left;
+    display: block;
+}
+
+.rightContent{
+    background-color: blue;
+}
+
+#wrapperHeader{
+    width:100%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    color:#fff;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ageButtons a{
+    width:400px;
+    height: 400px;
+}
+.ageButtons a:hover{
+    background:red;
+}
+#wrapperHeader h1{
+    font-size:4em;
+}
+#wrapperHeader h2{
+    font-size: 3em;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+#wrapperHeader img{
+    width: 600px;
+    margin: 10px 0;
+}
+/*AGE BUTTONS*/
+#buttons{
+    width:60%;
+    margin:0 auto;
+    z-index: 0;
+}
+.ageButtons{
+    width: 40%;
+    height: 350px;
+    line-height: 250px;
+    float: left;
+    margin: 0 5%;
+    background-color:#37c3e3;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    border: 6px solid #6d6e71;
+}
+
+/*.ageButtons:first-child{margin-right: 0;}*/
+
+.ageButtons .tenPlusButton, .ageButtons .sixteenPlusButton{
+    
+}
+
+/*END AGE BUTTONS/header*/
+
+.navigation{
+    width:100%;
+    height: 80px;
+    background-color:#37c3e3;
+    display: block;
+    float: left;
+}
+#container{
+    background:url('../images/pattern-white.png');
+    height:2400px;
+    width:100%;
+    padding-top: 30px;
+}
+.containerMargin{
+    margin-top: 80px;
+}
+.wings img{
+    width:90%;
+    margin:0 auto;
+}
+}
+
+@media screen and (min-width:1600px){ /*desktop*/
+    #buttons{
+    width:850px;
+    }
+    .ageButtons{
+    height: 350px;
+    }
+    #wrapperHeader h1{
+    /*margin-top: 33%;*/
+    }
+    #wrapperContainer{
+        width:60%;
+    }
+    .hetTeam{
+        width:650px;
+        height: 120px;
+    }
+    
+    .leftContent, .rightContent{
+        width: 50%;
+        height: 600px;
+        background-color: red;
+        float: left;
+        display: block;
+    }
+
+    .rightContent{
+        background-color: blue;
+    }
+
+}
+
+@media screen and ( min-height: 745px ) , screen and (min-width: 1000px) {
+     #header, #slide-window{
+         height: 800px;
+     }
+    
+}
+@media screen and ( min-height: 568px ) , screen and (max-width: 321px) {
+    #header, #slide-window{
+        height: 100vh;
+    }
 }
