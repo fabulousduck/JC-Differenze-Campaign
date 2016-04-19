@@ -29,7 +29,6 @@ if (isset($accessToken)) {
   echo "succes!<br>";
 }
 $user = $response->getGraphUser();
-define("USER", $user);
 // var_dump($user);
 // echo '<br>Name: ' . $user['name'];
 // echo "<img src=".$user['picture']['url']." /> ";
