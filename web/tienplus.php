@@ -57,10 +57,29 @@
     </nav>
     
     <div id="container">
-        <div class="contentContainer">      
+      <div class="contentContainer">      
             <div class="leftContent">a</div>
+            <div class="rightContent"><p class="tienplus_tekst">Als kind wordt je vaak verteld over wat je niet kan.</p></div>
+            
+            <div class="leftContent"><p class="tienplus_tekst">Meestal moet je luisteren naar deze mensen, maar soms moet je ze ook gewoon even negeren.</p></div>
             <div class="rightContent">a</div>
-        </div> 
+            
+            <div class="leftContent">a</div>
+            <div class="rightContent"><p class="tienplus_tekst">Negeer op dit moment even alles op social media en focus je op jezelf.</p></div>
+            
+            <div class="leftContent"><p class="tienplus_tekst">Maak je eigen weg naar de top.</p></div>
+            <div class="rightContent">a</div>
+            
+            <div class="leftContent">a</div>
+            <div class="rightContent"><p class="tienplus_tekst">zet je eigen puzzelstukjes in elkaar en denk goed na over wat jij leiuk vindt.</p></div>
+            
+            <div class="leftContent"><p class="tienplus_tekst">Misschien kan je het niet alleen en heb je een beetje hulp nodig.</p>c</div>
+            <div class="rightContent">a</div>
+            
+            <div class="leftContent">a</div>
+            <div class="rightContent"><p class="tienplus_tekst">Met een beetje hulp van ons kunnen we er samen achter komen wat jouw talent is.</p></div>
+            
+        </div>  
     </div> 
     
         
