@@ -48,8 +48,8 @@
             <div class="logo"><img src="images/icon.png"></img></div>
             <div class="menu">
                 <ul>
-                    <li><a href="">App</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="http://ma.cruxpanel.nl/workspace_3/app/">App</a></li>
+                    <li><a href="http://jcdifferenze.nl/contact/">Contact</a></li>
                 </ul>
                 
             </div>
@@ -185,6 +185,11 @@
                 
         </div>
     </div> <!--End container 2-->
+    <div class="clear"></div>
+    
+    <footer class="footer">
+        <p>&copy; All rights reserved | Project by <a href="http://ma-web.nl">Mediacollege Amsterdam</a></p>
+    </footer>
             
     
     

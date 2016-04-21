@@ -2,58 +2,74 @@
     font-family: fb;
     src: url(../assets/font/FACEBOLF.OTF);
 }
+@font-face {
+    font-family: Chalkboard;
+    src: url(../../web/font/chalkboard.ttf);
+}
 
-
+span{
+    color:#37c3e3;
+    font-style: italic;
+}
+.clear{
+    clear: both;
+}
 *{
     margin: 0;
 }
 
 body {
+    background-image: url('../../web/images/pattern-white.png');
     background-color: #fff;
+    font-family: sans-serif;
 }
 
-
-
 #fb-nav{
-    height: 120px;
+    height: 80px;
     width: 100%;
     background-color :#4c66a4;
 }
 
 .fltRight{
     float: right;
-    margin-right: 5%;
 }
 
 .fltLeft{
     float: left;
-    margin-left: 5%;
 }
 
 .imrgtop{
     margin-top: 20px;
 }
-
+.icon{
+    width:20%;
+    float:left;
+    color:#fff;
+    text-align:center;
+    padding-top: 25px;
+}
 #fb-nav a{
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2em;
     font-family: fb;
     text-decoration: none;
     color: white;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 29px;
     display: block;
 }
-
+#fb-nav i{
+    font-size: 2em;
+}
 
 #fb-nav p{
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2em;
     font-family: fb;
     text-decoration: none;
     color: white;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 29px;
     display: block;
 }
 
@@ -63,70 +79,98 @@ body {
 
 .fb-button{
     height: 100%;
-    width: 10%;
-
+    width: 50%;
+    float: left;
+    box-sizing:border-box;
+}
+.fb-button2{
+    height: 100%;
+    width: 30%;
+    float:left;
+    box-sizing:border-box;
 }
 
 #titleOne{
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #titleOne p{
     text-align: center;
-    font-family: fb;
+    font-weight: 700;
     border-bottom: 1px solid #62b1f6;
-    font-size: 50px;
+    font-size: 8vw;
     margin-top: 50px;
-    width:80%;
+    width:90%;
     margin: 20px auto;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 #explainSection{
-    height: 500px;
+    height: auto;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 #explainOne{
-    height: 20%;
     width:100%;
 }
 
 #explainOne p{
-    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 7vw;
     width: 80%;
     margin: 0 auto;
 
 }
 
 #explainTwo{
-    height: 40%;
     width: 100%;
     margin-top: 5%;
 }
 
 #explainTwo p{
-    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 7vw;
     width: 90%;
     margin: 0 auto;
     border-bottom: 1px solid #62b1f6;
+    padding-bottom: 10px;
 }
 
-#continueButton{
-    height: 300px;
-    width: 80%;
-    margin-left: 10%;
-    border-radius: 20px;
+#continueButton a{
+    border-radius: 10px;
     background-color: rgb(49,183,222);
-    border: 5px solid grey;
+    border: 3px solid #6d6e71;
+    display: block;
+    width:70%;
+    height: 70px;
+    margin: 0 auto;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 70px;
+    font-size:2em;
+    margin-top: 20px;
+    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
-
+footer.footer{
+    width:90%;
+    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    color:#6d6e71;
+    margin:0 auto;
+    border-top:1px solid #6d6e71;
+    text-align: center;
+    font-size:3vw;
+    padding:3px 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+footer.footer a{
+    color:#6d6e71;
+}
 #continueButton p{
     font-size: 80px;
     font-family: fb;
@@ -142,4 +186,69 @@ body {
    border: 1px solid #000;
    position: absolute;
    bottom:0;
+}
+
+@media screen and (min-width: 715px){
+    
+.fb-button{
+    height: 100%;
+    width: auto;
+    float: left;
+    padding: 0 20px;
+    box-sizing:border-box;
+}
+.icon{
+    width:60px;
+    float:right;
+    color:#fff;
+    /*text-align:center;*/
+    padding-top: 25px;
+}
+.fb-button2{
+    height: 100%;
+    width: 100px;
+    float:right;
+    box-sizing:border-box;
+}
+#fb-nav p{
+    text-decoration: none;
+    font-size: 2em;
+    font-family: fb;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+#titleOne p{
+    font-size:3em;
+    width:60%;
+    letter-spacing: 1px;
+}
+#explainOne p,#explainTwo p{
+    font-size:1.5em;
+    width:50%;
+    float:left;
+    border-bottom: none;
+}
+footer.footer{
+    font-size:14px;
+    position: absolute;
+    bottom:0;
+    left:5%;
+}
+#explainSection {
+    height: 140px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 140px;
+    border-bottom: 1px solid #62b1f6;
+}
+#continueButton a{
+    width: 20%;
+    height: 100px;
+    line-height: 95px;
+}
+#titleOne{
+    margin-top: 100px;
+}
 }
