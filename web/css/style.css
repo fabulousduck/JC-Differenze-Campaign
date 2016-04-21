@@ -120,7 +120,6 @@ span{
     position: relative;
     height: 80px;
     margin-left: 10px;
-    margin-left: 10px;
 }
 
 .navigation .navigationWrapper .menu ul li a{
@@ -286,6 +285,22 @@ i.fa{
     margin-left: 0;
 }
 
+
+/*tienplus versie*/
+
+.tienplus_tekst{
+	font-size: 1em;
+	border: none;
+	line-height: 35px;
+	text-align: center;
+	margin: 20px 0;
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*einde tienplus versie*/
+
 @media screen and (min-width: 500px ){
     .ageButtons{
         height: 200px;
@@ -323,7 +338,7 @@ i.fa{
       background-size: cover; 
       background-position:50% 50%;
       color:#fff;
-      -webkit-transform: translate3d(0px,0px,0px);
+      -webkit-transform: translated(0px,0px,0px);
       visibility:hidden;
       -webkit-transform-style: preserve-3d;
       box-shadow: inset 0 0 0 10000px rgba(0,0,0, 0.6);
