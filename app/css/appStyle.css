@@ -8,6 +8,10 @@
     margin: 0;
 }
 
+a{
+   text-decoration: none;
+}
+
 body {
     background-color: #fff;
 }
@@ -137,9 +141,122 @@ body {
 
 
 #footer{
-   height: 50px;
+   height: 80px;
    width :100%;
-   border: 1px solid #000;
+   border-top: 3px solid lightgray;
    position: absolute;
    bottom:0;
+}
+
+#footer p{
+   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+   color: lightgray;
+   text-align: center;
+   font-size: 15px;
+   margin-top: 25px;
+}
+
+#vraag{
+   height: 80px;
+   width: 100%;
+   /*border: 1px solid #000;*/
+}
+
+.vrg{
+   float: left;
+   margin-left: 45%;
+   margin-top: 15px;
+   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+   font-size: 30px;
+}
+
+.lightBlue{
+   color: rgb(49,183,222);
+   float: left;
+   margin-top: 15px;
+   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+   font-size: 30px;
+}
+
+#question{
+   height: 100px;
+   width: 100%;
+   /*border: 1px solid #000;*/
+}
+
+#question p{
+   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+   font-size: 40px;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.progressBar{
+   height: 3px;
+   width: 100%;
+   background-color: rgb(49,183,222);
+   margin-top: 70px;
+}
+
+#progress{
+   position: absolute;
+   z-index: 2;
+   height: 70px;
+   width: 70px;
+   background-color: white;
+   margin-top: 45px;
+   margin-left: 85%;
+}
+
+#progress p{
+   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+   color: rgb(49,183,222);
+   text-align: center;
+   font-size: 27px;
+   margin-top: 10px;
+}
+
+#questionBoard{
+   margin-top: 50px;
+   height: 400px;
+   width: 60%;
+   margin-left: 10%;
+   /*border: 1px solid #000;*/
+}
+
+.checkFirst{
+   margin-top: 100px;
+   margin-left: 10%;
+}
+
+.checkbx{
+   margin-left: 10%;
+   margin-top: 60px;
+}
+
+label{
+   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+   font-size: 30px;
+   font-weight: 600;
+   margin-left: 30px;
+}
+
+
+#next{
+   height: 100px;
+   width :30%;
+   float: right;
+   border: 6px solid darkgray;
+   border-radius: 10px;
+   background-color: rgb(49,183,222);
+   margin-right: 10%;
+   margin-top: 150px;
+}
+
+#next p{
+   color: white;
+   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+   text-align: center;
+   margin-top: 27px;
+   font-size: 30px;
 }

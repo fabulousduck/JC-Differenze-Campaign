@@ -29,18 +29,9 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
    <body>
-     <nav id="fb-nav">
-        <div class="fltLeft fb-button">
-            <p>Facebook</p>
-        </div>
-        <div class="fltRight fb-button">
-            <a href=" <?php echo $loginUrl ?> ">login</a>
-        </div>
-        <i class="fa fa-user fa-5x fa-inverse fltRight imrgtop" aria-hidden="true"></i>
-    </nav>
-    <div id="titleOne">
-        <i><p>wat is jou talent ?</p></i>
-    </div>
+      <?php
+         include "views/header.php";
+       ?>
     <div id="explainSection">
         <div id="explainOne">
             <i><p>In deze app ga je een quiz maken</p></i>
@@ -49,10 +40,13 @@
             <i><p>Dankzij deze quiz kunnen wij samen met jou,<br>erachter komen wat jou talent is.</p><i>
         </div>
     </div>
-    <div id="continueButton">
+    <a href="views/questionTemplate.php"><div id="continueButton">
         <p>doe de quiz</p>
-    </div>
-    <script src="logic/JS/app-ageHandler.js"></script>
+    </div></a>
+    <?php
+      include "views/footer.php";
+     ?>
+
     <script src="logic/JS/httpRunner.js"></script>
 </body>
  </html>
