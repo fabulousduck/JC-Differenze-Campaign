@@ -239,7 +239,7 @@ i.fa{
 .leftContent{
     width: 100%;
     height: 50%;
-background-image:url(../images/pattern-white.png);
+	background-image:url(../images/pattern-white.png);
 	background-size:cover;    float: left;
     display: block;
     
@@ -248,7 +248,7 @@ background-image:url(../images/pattern-white.png);
 .rightContent{
     width: 100%;
     height: 50%;
-background-image:url(../images/pattern-white.png);
+	background-image:url(../images/pattern-white.png);
 	background-size:cover;    float: left;
     display: block;
 }
@@ -286,13 +286,6 @@ background-image:url(../images/pattern-white.png);
 
 /*tienplus versie*/
 
-.leftContent.rightContent p{
-	 display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
 .tienplus_tekst{
 	margin-top: 30%;
 	margin-right: auto;
@@ -302,6 +295,11 @@ background-image:url(../images/pattern-white.png);
 	line-height: 35px;
 	text-align: center;
 	width: 75%;
+}
+
+.tienplus_hand{
+	text-align: center;
+	font-size:2em;
 }
 
 .leftContent.rightContent{
