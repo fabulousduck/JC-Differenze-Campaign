@@ -61,7 +61,7 @@
             <div class="leftContent als_kind"></div>
             <div class="rightContent"><p class="tienplus_tekst">Als kind wordt je vaak verteld over wat je niet kan.</p></div>
             
-            <div class="leftContent"><p class="tienplus_tekst">Meestal moet je luisteren naar deze mensen, maar soms moet je ze ook gewoon even negeren.</p></div>
+            <div class="leftContent"><p class="tienplus_tekst">Meestal moet je luisteren naar deze mensen, maar soms moet je ze ook gewoon even negeren.</p><p class="tienplus_hand"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></p></div>
             <div class="rightContent meestal_moet_je_luisteren"></div>
             
             <div class="leftContent negeer_op_dit_moment"></div>
@@ -80,11 +80,20 @@
             <div class="rightContent"><p class="tienplus_tekst">Met een beetje hulp van ons kunnen we er samen achter komen wat jouw talent is.</p></div>
             
         </div> 
+        
+         <div id="buttoons">
+                    <a class="left" href="http://ma.cruxpanel.nl/workspace_3/app">QUIZ!</a>
+                    <a class="right" href="http://jc-differenze.nl">Jc Differenze</a>
+         </div>
+        
     </div> 
     
         
     <div class="clear"><!--Sick clearfix voor de floats gozaah--></div>
 
+<footer class="footer">
+        <p>&copy; All rights reserved | Project by <a href="http://ma-web.nl">Mediacollege Amsterdam</a></p>
+    </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script type="text/javascript" src="logic/js/index.js"></script>
