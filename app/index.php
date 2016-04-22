@@ -54,7 +54,7 @@
     </div>
 <div class="clear"></div>
     <div id="continueButton">
-        <a href="">Doe De Quiz</a>
+        <a href="views/questionTemplate.php">Doe De Quiz</a>
     </div>
     
      <footer class="footer">
