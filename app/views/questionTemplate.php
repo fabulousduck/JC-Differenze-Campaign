@@ -17,12 +17,14 @@
       </div>
       <hr class="progressBar">
       <div id="questionBoard">
-         <input type="checkbox" id="yes" class=" checkFirst">
-         <label for="yes">ja</label><br>
-         <input type="checkbox" id="no" class="checkbx">
-         <label for="no">nee</label><br>
-         <input type="checkbox" id="idk" class="checkbx">
-         <label for="idk">Weet ik niet</label><br>
+         <form name="checkboxes">
+            <input type="checkbox" id="yes" name="checkgroup" class=" checkFirst">
+            <label for="yes">ja</label><br>
+            <input type="checkbox" id="no" name="checkgroup" class="checkbx">
+            <label for="no">nee</label><br>
+            <input type="checkbox" id="idk" name="checkgroup" class="checkbx">
+            <label for="idk">Weet ik niet</label><br>
+         </form>
       </div>
       <div id="next" onclick="next();">
          <p>volgende vraag</p>

@@ -57,7 +57,7 @@
     </nav>
     
     <div id="container">
-      <div class="contentContainer">      
+        <div class="contentContainer">      
             <div class="leftContent">a</div>
             <div class="rightContent"><p class="tienplus_tekst">Als kind wordt je vaak verteld over wat je niet kan.</p></div>
             
@@ -79,7 +79,7 @@
             <div class="leftContent">a</div>
             <div class="rightContent"><p class="tienplus_tekst">Met een beetje hulp van ons kunnen we er samen achter komen wat jouw talent is.</p></div>
             
-        </div>  
+        </div> 
     </div> 
     
         
