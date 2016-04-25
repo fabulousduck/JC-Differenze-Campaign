@@ -200,13 +200,7 @@ span{
     font-size: 125%;
     line-height: 35px;
 }
-<<<<<<< HEAD
-.center i{
-    font-size:4em;
-}
-=======
 
->>>>>>> efbac2116e4ed848132c0b2e338b0eaa8f2472ec
 .hetTeam{
     height: auto;
 }
@@ -222,8 +216,6 @@ span{
     margin-top:0 !important;
 }
 
-<<<<<<< HEAD
-=======
 .hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
     width:75%;
     border-left: 1px solid #000;
@@ -235,7 +227,6 @@ span{
     float: right;
 }
 
->>>>>>> efbac2116e4ed848132c0b2e338b0eaa8f2472ec
 .hetTeam, #ontstaan, #profesionals, #onsIdee, #team, #werkwijze{
     margin: 20px 0;
 }
@@ -321,19 +312,6 @@ i.fa{
 
 #buttoons a:last-child{
     margin-left: 0;
-}
-footer.footer{
-    width:90%;
-    color:#6d6e71;
-    margin:0 auto;
-    border-top:1px solid #6d6e71;
-    text-align: center;
-    font-size:3vw;
-    padding:3px 0;
-    margin-top: 50px;
-}
-footer a{
-    color:#6d6e71;
 }
 
 footer.footer{
@@ -439,6 +417,48 @@ footer a{
         height: 200px;
         line-height: 120px;
     }
+	
+	.leftContent.als_kind{
+		background-image: url(../images/lachend_meisje.jpg);
+background-size: cover;
+height: 500px;
+	}
+	
+	.rightContent.meestal_moet_je_luisteren {
+	background-image:url(../images/meisje.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.leftContent.negeer_op_dit_moment {
+	background-image:url(../images/social.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.rightContent.maak_je_eigen_weg {
+	background-image:url(../images/trap.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.leftContent.zet_je_eigen_puzzelstukjes{
+	background-image:url(../images/puzzelstukjes.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.rightContent.misschien_kan_je_het_niet_alleen{
+	background-image:url(../images/handen.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.leftContent.met_een_beetje_hulp {
+	background-image:url(../images/photo_40414_20150901.jpg);
+	background-size:cover;
+	height: 500px;
+}
 }
 @media screen and (min-width:766px){/*Tablet*/
     
@@ -608,12 +628,8 @@ i.fa{
     width:80%;
     margin:0 auto;
 }
-<<<<<<< HEAD
-.hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p,.dankzij p,{
-=======
 
 .hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
->>>>>>> efbac2116e4ed848132c0b2e338b0eaa8f2472ec
     font-size:1em;
     border:none;
     line-height: 35px;
@@ -630,12 +646,10 @@ i.fa{
 }
 #werkwijze p{
     margin: 0;
-    padding:0;
 }
 #wachten{
     width:700px;
     margin-bottom: 120px;
-    margin-top: 120px;
 }
 .video-container {
     position: relative;
@@ -723,9 +737,6 @@ i.fa{
     color: white;
     text-transform: uppercase;
 }
-.navigation .navigationWrapper .menu ul li a:hover{
-     color:#000;
-}
 #buttons{
     width:70%;
     height: 50px;
@@ -741,7 +752,7 @@ i.fa{
     padding: 4px;
     text-align: center;
     text-transform: uppercase;
-    line-height: 95px;
+    line-height: 100px;
     font-size:2em;
 }
 #buttoons a:first-child{
@@ -750,9 +761,7 @@ i.fa{
 #buttoons a:last-child{
     margin-left: 5px;
 }
-footer.footer{
-    font-size:16px;
-}
+
 }
 @media screen and (min-width:1100px){ /*Laptop*/
 
@@ -844,7 +853,7 @@ background-image:url(../images/pattern-white.png);
 }
 #container{
     background:url('../images/pattern-white.png');
-    height:auto;
+    height:2400px;
     width:100%;
     padding-top: 30px;
 }
@@ -854,11 +863,6 @@ background-image:url(../images/pattern-white.png);
 .wings img{
     width:90%;
     margin:0 auto;
-}
-.center{
-    text-align: center;
-    font-size: 175%;
-    line-height: 35px;
 }
 }
 
@@ -905,20 +909,3 @@ background-image:url(../images/pattern-white.png);
         height: 100vh;
     }
 }
-<<<<<<< HEAD
-
-@media screen and ( max-height: 751px ) , screen and (min-width: 1280px) {
-    .ageButtons {
-    width: 40%;
-    height: 200px;
-    line-height: 130px;
-}
-/*#wrapperHeader img{*/
-/*    width:400px;*/
-/*}*/
-#wrapperHeader h1{
-    font-size:2em;
-}
-}
-=======
->>>>>>> 78cd6d2dd57ee23ec4052b1eb9b1cd75be9c4ac0
