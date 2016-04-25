@@ -31,8 +31,8 @@
             <img src="images/logo.png"></img>
                 <h2>Wat is jouw leeftijd?</h2>
                     <div id="buttons">
-                        <div class="ageButtons tenPlusButton"><a><h1>10+</h1></a></div>
-                        <div class="ageButtons sixteenPlusButton"><a><h1>16+</h1></a></div>
+                        <div class="ageButtons tenPlusButton"><a href="http://ma.cruxpanel.nl/workspace_3/web/tienplus.php"><h1>10+</h1></a></div>
+                        <div class="ageButtons sixteenPlusButton"><a href="http://ma.cruxpanel.nl/workspace_3/web/"><h1>16+</h1></a></div>
                         <div class="clear"></div>
                     </div>
             </div>
@@ -86,7 +86,7 @@
                 
                 <div id="profesionals" class="center">
                     <p id="fadeIn3" class="tachtig left">
-                        Een aatal <span>jeugdprofessials</span> kwamen bij elkaar en samen dachten zij over hoe slecht de hulpverlening was voor (probleem)jongeren en de ouders daarvan.
+                        Een aantal <span>jeugdprofessionals</span> kwamen bij elkaar en samen zagen zij de hiaten binnen de hulpverlening voor (probleem)jongeren en hun ouders.
                     </p>
                     <i id="slideLeft2" class="fa fa-comment twintig right"></i>
                     <div class="clear"></div>
@@ -97,11 +97,11 @@
                 <div id="onsIdee" class="center right">
                        <div id="fadeIn4">
                             <p class="tachtig right">
-                              Er werd een <span>denktank</span> samengesteld van jeugdprofessials, vanuit diverse disciplines waarbij ideeën samengesmolten werden en uiteindelijk tot een concreet plan kwam.
+                              Er werd een <span>denktank</span> samengesteld van jeugdprofessionals, vanuit diverse disciplines, waarbij ideeën werden omgezet tot een concreet plan.
                             </p>
                             <i id="slideRight2" class="fa fa-lightbulb-o twintig left"></i>
                             <p class="tachtig right">  
-                              Binnen een maand bestond het team uit 20 personen wat ondertussen is uitgegroeid tot meer dan 100.
+                              Binnen een maand bestond het team uit 20 personen waarbij de teller ondertussen op meer dan 120 personen staat.
                             </p>
                       </div>
                 </div>
@@ -109,7 +109,7 @@
                 
                 <div id="team" class="center">
                     <p id="fadeIn5" class="tachtig left">
-                        Ons <span>team</span> bestaat uit zowel jeugdspecialiste, particulieren, ervaringdeskundigen, bedrijven en personen uit bestaande organisaties
+                        Ons <span>team</span> bestaat uit zowel jeugdspecialisten, particulieren, ervaringsdeskundigen, bedrijven en personen uit bestaande organisaties.
                     </p>
                     <i id="slideLeft3" class="fa fa-users twintig right"></i>
                 </div>
@@ -143,7 +143,7 @@
                  
                  <div class="wijHebben center">
                     <p id="fadeIn7" class="tachtig left">
-                        <span>Wij</span> hebben samen een quiz voor jou samengesteld.
+                        <span>We</span> hebben samen een quiz voor jou samengesteld.
                     </p>
                     <i id="slideLeft4" class="fa fa-pencil twintig"></i>
                 </div>
@@ -152,7 +152,7 @@
                 
                 <div id="werkwijze" class="center right">
                     <p id="fadeIn8" class="tachtig right">
-                      In deze quiz heb je een paar vragen die je moet beantwoorden.
+                      In deze quiz krijg je een aantal vragen om je van advies te kunnen voorzien.
                     </p>
                     <i id="slideRight4"class="fa fa-question margin-o twintig" aria-hidden="true"></i>
                 </div>
@@ -179,11 +179,7 @@
                 <div id="buttoons">
                     <a class="left" href="http://ma.cruxpanel.nl/workspace_3/app">QUIZ!</a>
                     <a class="right" href="http://jc-differenze.nl">Jc Differenze</a>
-                
-                
-                
-                
-        </div>
+                </div>
     </div> <!--End container 2-->
     <div class="clear"></div>
     

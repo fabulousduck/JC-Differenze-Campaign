@@ -33,6 +33,16 @@ span{
     visibility: hidden;
     display: none;
 }
+
+#buttons a{
+    color:#fff;
+    text-decoration: none;
+    padding: 20px 0;
+    box-sizing:border-box;
+}
+#buttons a:hover, #buttons a:active{
+    color:black;
+}
 /* END HEADER SLIDER */
 
 
@@ -61,14 +71,23 @@ span{
     width:90%;
     margin-top: 60px;
 }
-
 #container{
     background:url('../images/pattern-white.png');
     height:auto;
     width:100%;
     padding-top: 50px;
 }
-
+#buttoons{
+    width:60%;
+    margin:0 auto;
+    height: 200px;
+}
+#buttoons a{
+    font-size:12px;
+    background:red;
+    width:50%;
+    float:left;
+}
 .ageButtons{
     width: 40%;
     height: 120px;
@@ -200,13 +219,9 @@ span{
     font-size: 125%;
     line-height: 35px;
 }
-<<<<<<< HEAD
 .center i{
     font-size:4em;
 }
-=======
-
->>>>>>> efbac2116e4ed848132c0b2e338b0eaa8f2472ec
 .hetTeam{
     height: auto;
 }
@@ -222,20 +237,7 @@ span{
     margin-top:0 !important;
 }
 
-<<<<<<< HEAD
-=======
-.hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
-    width:75%;
-    border-left: 1px solid #000;
-    text-align: left;
-    padding-left: 20px;
-    margin:0;
-    font-size:0.5em;
-    line-height: 20px;
-    float: right;
-}
 
->>>>>>> efbac2116e4ed848132c0b2e338b0eaa8f2472ec
 .hetTeam, #ontstaan, #profesionals, #onsIdee, #team, #werkwijze{
     margin: 20px 0;
 }
@@ -271,7 +273,7 @@ i.fa{
 
 .leftContent{
     width: 100%;
-    height: 50%;
+    height: 500px;
 	background-image:url(../images/pattern-white.png);
 	background-size:cover;
 	float: left;
@@ -281,7 +283,7 @@ i.fa{
 
 .rightContent{
     width: 100%;
-    height: 50%;
+    height: 500px;
 	background-image:url(../images/pattern-white.png);
 	background-size:cover;    
 	float: left;
@@ -354,12 +356,16 @@ footer a{
 
 /*tienplus versie*/
 
-.tienplus_tekst{
-	margin-top: 30%;
+#container div p{
+    font-size:1em;
+    height: 150px;
+}
+#container div p.tienplus_tekst{
+    margin-top: 150px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 0;
-	font-size: 175%;
+	font-size: 1em;
 	line-height: 35px;
 	text-align: center;
 	width: 75%;
@@ -415,16 +421,6 @@ footer a{
 	font-size: 1em;
 }
 
-#buttoons.tienplus_buttons {
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-}
-
-#buttoons.tienplus_buttons a{
-	margin-top:80px;
-	margin-bottom:15px;
-}
 
 .tienplus {
 	background-image:url(../images/pattern-white.png);
@@ -459,6 +455,16 @@ footer a{
     #wrapperHeader h2{
         font-size: 2.5em;
     }
+    #container div p.tienplus_tekst{
+    margin-top: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	font-size: 2em;
+	line-height: 45px;
+	text-align: center;
+	width: 75%;
+}
     
 .slide {
       list-style:none;
@@ -608,19 +614,18 @@ i.fa{
     width:80%;
     margin:0 auto;
 }
-<<<<<<< HEAD
-.hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p,.dankzij p,{
-=======
 
 .hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
->>>>>>> efbac2116e4ed848132c0b2e338b0eaa8f2472ec
     font-size:1em;
     border:none;
     line-height: 35px;
     text-align:center;
     margin:20px 0;
 }
-
+#zestig{
+    width:60%;
+    margin:0 auto;
+}
 .hetTeam p, #profesionals p,#team p{
     float:left;
 }
@@ -742,10 +747,10 @@ i.fa{
     text-align: center;
     text-transform: uppercase;
     line-height: 95px;
-    font-size:2em;
+    font-size:1.5em;
 }
 #buttoons a:first-child{
-    margin-right: 5px;
+    margin-right: 0px;
 }
 #buttoons a:last-child{
     margin-left: 5px;
@@ -764,10 +769,6 @@ footer.footer{
     float: left;
     display: block;
 }
-
-.rightContent{
-background-image:url(../images/pattern-white.png);
-	background-size:cover;}
 
 #wrapperHeader{
     width:100%;
@@ -826,6 +827,7 @@ background-image:url(../images/pattern-white.png);
     box-sizing:border-box;
     border: 6px solid #6d6e71;
 }
+
 
 /*.ageButtons:first-child{margin-right: 0;}*/
 
@@ -905,7 +907,6 @@ background-image:url(../images/pattern-white.png);
         height: 100vh;
     }
 }
-<<<<<<< HEAD
 
 @media screen and ( max-height: 751px ) , screen and (min-width: 1280px) {
     .ageButtons {
@@ -920,5 +921,3 @@ background-image:url(../images/pattern-white.png);
     font-size:2em;
 }
 }
-=======
->>>>>>> 78cd6d2dd57ee23ec4052b1eb9b1cd75be9c4ac0

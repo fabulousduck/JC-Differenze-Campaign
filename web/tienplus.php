@@ -31,8 +31,8 @@
             <img src="images/logo.png"></img>
                 <h2>Wat is jouw leeftijd?</h2>
                     <div id="buttons">
-                        <div class="ageButtons tenPlusButton"><a><h1>10+</h1></a></div>
-                        <div class="ageButtons sixteenPlusButton"><a><h1>16+</h1></a></div>
+                        <div class="ageButtons tenPlusButton"><a href="http://ma.cruxpanel.nl/workspace_3/web/tienplus.php"><h1>10+</h1></a></div>
+                        <div class="ageButtons sixteenPlusButton"><a href="http://ma.cruxpanel.nl/workspace_3/web/"><h1>16+</h1></a></div>
                         <div class="clear"></div>
                     </div>
             </div>
@@ -73,7 +73,7 @@
             <div class="leftContent zet_je_eigen_puzzelstukjes"></div>
             <div class="rightContent"><p class="tienplus_tekst">zet je eigen puzzelstukjes in elkaar en denk goed na over wat jij leiuk vindt.</p></div>
             
-            <div class="leftContent"><p class="tienplus_tekst">Misschien kan je het niet alleen en heb je een beetje hulp nodig.</p>c</div>
+            <div class="leftContent"><p class="tienplus_tekst">Misschien kan je het niet alleen en heb je een beetje hulp nodig.</p></div>
             <div class="rightContent misschien_kan_je_het_niet_alleen"></div>
             
             <div class="leftContent met_een_beetje_hulp"></div>
@@ -81,10 +81,14 @@
             
         </div> 
         
-         <div id="buttoons">
+        <div id="zestig">
+             <div id="buttoons">
                     <a class="left" href="http://ma.cruxpanel.nl/workspace_3/app">QUIZ!</a>
                     <a class="right" href="http://jc-differenze.nl">Jc Differenze</a>
+                </div>
+
          </div>
+         <div class="clear"></div>
         
     </div> 
     
