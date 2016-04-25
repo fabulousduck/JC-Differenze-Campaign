@@ -24,29 +24,44 @@
 
  <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/appStyle.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        
     </head>
    <body>
-      <?php
-         include "views/header.php";
-       ?>
+     <nav id="fb-nav">
+        <div class="fb-button">
+            <p>Facebook</p>
+        </div>
+        <i class="fa fa-user icon" aria-hidden="true"></i>
+        <div class="fb-button2">
+            <a href=" <?php echo $loginUrl ?> ">login</a>
+        </div>
+        
+    </nav>
+    <div id="titleOne">
+        <p>wat is jou talent ?</p>
+    </div>
     <div id="explainSection">
         <div id="explainOne">
-            <i><p>In deze app ga je een quiz maken</p></i>
+            <p>In deze app ga je een <span>quiz</span> maken</p>
         </div>
         <div id="explainTwo">
-            <i><p>Dankzij deze quiz kunnen wij samen met jou,<br>erachter komen wat jou talent is.</p><i>
+            <p>Dankzij deze quiz kunnen <span>wij</span> samen met jou,<br>erachter komen wat jou talent is!</p>
         </div>
     </div>
-    <a href="views/questionTemplate.php"><div id="continueButton">
-        <p>doe de quiz</p>
-    </div></a>
-    <?php
-      include "views/footer.php";
-     ?>
-
+<div class="clear"></div>
+    <div id="continueButton">
+        <a href="views/questionTemplate.php">Doe De Quiz</a>
+    </div>
+    
+     <footer class="footer">
+        <p>&copy; All rights reserved | Project by <a href="http://ma-web.nl">Mediacollege Amsterdam</a></p>
+    </footer>
+    
+    <script src="logic/JS/app-ageHandler.js"></script>
     <script src="logic/JS/httpRunner.js"></script>
 </body>
  </html>

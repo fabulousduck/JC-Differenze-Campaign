@@ -2,28 +2,31 @@
     font-family: Chalkboard;
     src: url(../font/chalkboard.ttf);
 }
-/*
 
+/*
 BLAUW: #37c3e3;
 GRIJS: #6d6e71;
-
 */
+
 body{
    padding:0;
    margin:0;
-   background:#fafafa;
+   background-image:url(../images/pattern-white.png);
    font-family: sans-serif;
-   overflow-x: hidden;
+   overflow-x: hidden !important;
 }
 
 h1,h2{
     font-family: chalkboard;
     letter-spacing: 3px;
 }
+
 span{
     color:#37c3e3;
     font-style: italic;
 }
+
+
 /* HEADER SLIDER */
 
 #slide-window{
@@ -31,9 +34,12 @@ span{
     display: none;
 }
 /* END HEADER SLIDER */
+
+
 .clear{
     clear: both;
 }
+
 #wrapperHeader{
     width:100%;
     height: 100vh;
@@ -45,20 +51,24 @@ span{
     background-size:cover;
     box-shadow: inset 0 0 0 10000px rgba(0,0,0, 0.6);
 }
+
 #wrapperHeader h2{
     font-size: 7vw;
     margin: 15px 0;
 }
+
 #wrapperHeader img{
     width:90%;
     margin-top: 60px;
 }
+
 #container{
     background:url('../images/pattern-white.png');
-    height:5000px;
+    height:auto;
     width:100%;
     padding-top: 50px;
 }
+
 .ageButtons{
     width: 40%;
     height: 120px;
@@ -71,12 +81,13 @@ span{
     border: 3px solid #6d6e71;
     font-size:140%;
 }
+
 .ageButtons h1{
     /*margin-top: 23%;*/
 }
 
-/* NAVIGATION MENU */
 
+/* NAVIGATION MENU */
 .navigation{
     width:100%;
     height: 50px;
@@ -92,10 +103,12 @@ span{
     margin-right: auto;
     display: block;
 }
+
 .logo img{
     height: 35px;
     margin-top: 8px ;
 }
+
 .navigation .navigationWrapper .logo{
     height: 50px;
     float: left;
@@ -123,7 +136,7 @@ span{
 }
 
 .navigation .navigationWrapper .menu ul li a{
-    width:auto;;
+    width:auto;
     color:#fff;
     text-decoration: none;
     padding: 16px 20px;
@@ -144,6 +157,7 @@ span{
     text-align:center;
     font-size:7vw;
 }
+
 #container h4{
     font-family: 'PT Sans', sans-serif;
     font-style: italic;
@@ -151,6 +165,7 @@ span{
     text-align: center;
     font-size: 3.3vw;
 }
+
 #wrapperContainer{
     width: 80%;
     margin:0 auto;
@@ -162,12 +177,10 @@ span{
     height: 40px;
     border-bottom: 1px solid black;
     display: block;
-    
     -ms-transform: rotate(35deg); /* IE 9 */
     -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
     -moz-transform: rotate(5deg); /* Firefox */ 
     transform: rotate(35deg);
-    
 }
 
 .line2{
@@ -176,7 +189,6 @@ span{
     height: 40px;
     border-bottom: 1px solid black;
     display: block;
-    
     -ms-transform: rotate(-35deg); /* IE 9 */
     -webkit-transform: rotate(-35deg); /* Chrome, Safari, Opera */
     -moz-transform: rotate(-35deg); /* Firefox */ 
@@ -185,15 +197,18 @@ span{
 
 .center{
     text-align: center;
-    font-size: 175%;
+    font-size: 125%;
     line-height: 35px;
 }
+
 .hetTeam{
     height: auto;
 }
+
 #slideLeft,#slideRight,#fadeIn,#fadeIn2,#fadeIn3, #slideLeft2,#fadeIn4,#slideRight2,#fadeIn5,#slideLeft3,#fadeIn6,#slideRight3,#fadeIn7, #slideLeft4,#fadeIn8,#slideRight4,#slideLeft5,#fadeIn9,#fadeIn10,#slideRight5{
     visibility: hidden;
 }
+
 .wings img{
     width:100%;
 }
@@ -211,19 +226,24 @@ span{
     line-height: 20px;
     float: right;
 }
+
 .hetTeam, #ontstaan, #profesionals, #onsIdee, #team, #werkwijze{
     margin: 20px 0;
 }
+
 i.fa{
     font-size:1.2em;
 }
+
 #werkwijze img{
     width:40px;
 }
+
 #youtube{
     width: 100%;
     height: 50px;
 }
+
 .video-container {
     position: relative;
     padding-bottom: 40.25%;
@@ -231,6 +251,7 @@ i.fa{
     height: 0;
     overflow: hidden;
 }
+
 .video-container iframe {
     position: absolute;
     top:0;
@@ -242,8 +263,9 @@ i.fa{
 .leftContent{
     width: 100%;
     height: 50%;
-    background-color: red;
-    float: left;
+	background-image:url(../images/pattern-white.png);
+	background-size:cover;
+	float: left;
     display: block;
     
 }
@@ -251,8 +273,9 @@ i.fa{
 .rightContent{
     width: 100%;
     height: 50%;
-    background-color: blue;
-    float: left;
+	background-image:url(../images/pattern-white.png);
+	background-size:cover;    
+	float: left;
     display: block;
 }
 
@@ -261,6 +284,7 @@ i.fa{
     height: 50px;
     margin:0 auto;
 }
+
 #buttoons a{
     height: 50px;
     background: #37c3e3;
@@ -273,31 +297,118 @@ i.fa{
     text-transform: uppercase;
     line-height: 50px;
     margin-top: 10px;
+    border-radius: 10px;
+    border: 3px solid #6d6e71;
 }
+
 #buttoons a:hover, #buttoons a:active{
     background: #6d6e71;
     transition: ease 0.7s;
 }
+
 #buttoons a:first-child{
     margin-right:0;
 }
+
 #buttoons a:last-child{
     margin-left: 0;
+}
+
+footer.footer{
+    width:90%;
+    color:#6d6e71;
+    margin:0 auto;
+    border-top:1px solid #6d6e71;
+    text-align: center;
+    font-size:3vw;
+    padding:3px 0;
+    margin-top: 50px;
+}
+
+footer a{
+    color:#6d6e71;
 }
 
 
 /*tienplus versie*/
 
 .tienplus_tekst{
-	font-size: 1em;
-	border: none;
+	margin-top: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	font-size: 175%;
 	line-height: 35px;
 	text-align: center;
-	margin: 20px 0;
 	width: 75%;
-	margin-left:auto;
-	margin-right:auto;
 }
+
+.tienplus_hand{
+	text-align: center;
+	font-size:2em;
+}
+
+.leftContent.als_kind {
+	background-image:url(../images/lachend_meisje.jpg);
+	background-size:cover;
+}
+
+
+.leftContent.rightContent{
+	background-image:url(../images/pattern-white.png);
+	background-size:cover;
+}
+
+.rightContent.meestal_moet_je_luisteren {
+	background-image:url(../images/meisje.jpg);
+	background-size:cover;
+}
+
+.leftContent.negeer_op_dit_moment {
+	background-image:url(../images/social.jpg);
+	background-size:cover;
+}
+
+.rightContent.maak_je_eigen_weg {
+	background-image:url(../images/trap.jpg);
+	background-size:cover;
+}
+
+.leftContent.zet_je_eigen_puzzelstukjes{
+	background-image:url(../images/puzzelstukjes.jpg);
+	background-size:cover;
+}
+
+.rightContent.misschien_kan_je_het_niet_alleen{
+	background-image:url(../images/handen.jpg);
+	background-size:cover;
+}
+
+.leftContent.met_een_beetje_hulp {
+	background-image:url(../images/photo_40414_20150901.jpg);
+	background-size:cover;
+}
+
+.footer.tienplus {
+	font-size: 1em;
+}
+
+#buttoons.tienplus_buttons {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+#buttoons.tienplus_buttons a{
+	margin-top:80px;
+	margin-bottom:15px;
+}
+
+.tienplus {
+	background-image:url(../images/pattern-white.png);
+	background-size:cover;
+}
+
 
 /*einde tienplus versie*/
 
@@ -306,20 +417,65 @@ i.fa{
         height: 200px;
         line-height: 120px;
     }
+	
+	.leftContent.als_kind{
+		background-image: url(../images/lachend_meisje.jpg);
+background-size: cover;
+height: 500px;
+	}
+	
+	.rightContent.meestal_moet_je_luisteren {
+	background-image:url(../images/meisje.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.leftContent.negeer_op_dit_moment {
+	background-image:url(../images/social.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.rightContent.maak_je_eigen_weg {
+	background-image:url(../images/trap.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.leftContent.zet_je_eigen_puzzelstukjes{
+	background-image:url(../images/puzzelstukjes.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.rightContent.misschien_kan_je_het_niet_alleen{
+	background-image:url(../images/handen.jpg);
+	background-size:cover;
+	height: 500px;
+}
+
+.leftContent.met_een_beetje_hulp {
+	background-image:url(../images/photo_40414_20150901.jpg);
+	background-size:cover;
+	height: 500px;
+}
 }
 @media screen and (min-width:766px){/*Tablet*/
     
     .ageButtons h1{
         font-size: 300%;
     }
+	
     #wrapperHeader{
         width:70%;
         background: none;
         box-shadow:none;
     }
+	
     #wrapperHeader img{
         width:50%;
     }
+	
     #wrapperHeader h2{
         font-size: 2.5em;
     }
@@ -338,11 +494,11 @@ i.fa{
       background-size: cover; 
       background-position:50% 50%;
       color:#fff;
-      -webkit-transform: translated(0px,0px,0px);
       visibility:hidden;
       -webkit-transform-style: preserve-3d;
       box-shadow: inset 0 0 0 10000px rgba(0,0,0, 0.6);
 }
+
 .alive { visibility:visible; }
 
 #slide-window {
@@ -365,12 +521,14 @@ i.fa{
   transform: translate3d(0px,0px,0px);
   transition: all 0.66s ease; -webkit-transition: all 0.66s ease; 
   }
+  
   #container h1, #container h2{
     font-family: 'PT Sans', sans-serif;
     font-style: italic;
     text-align:center;
     font-size:250%;
 }
+
 #container h4{
     font-size:120%;
     margin-bottom: 100px;
@@ -386,72 +544,91 @@ i.fa{
     width:15%;
     display: inline-block !important;
 }
+
 .hetTeam{
     width:600px;
     height: 120px;
     margin-bottom: 150px;
 }
+
 .tachtig{
     width:80%;
 }
+
 .twintig{
     width:20%;
 }
+
 .left{
     float: left;
 }
+
 .right{
     float: right;
 }
+
 #ontstaan{
     width:500px;
     margin-bottom: 120px;
     height: auto;
 }
+
 #ontstaan p{
     margin-top:40px;
 }
+
 #profesionals{
     width:750px;
     margin-bottom: 120px;
     height: auto;
 }
+
 #profesionals i{
     font-size:4em;
     margin-top: 45px;
 }
+
 #onsIdee{
     width:750px;
     margin-bottom: 120px;
     height: auto;
 }
+
 #onsIdee i{
     font-size:5em;
 }
+
 #team{
     width: 775px;
     margin-bottom: 150px;
     height: auto;
 }
+
 #werkwijze{
     width:600px;
     height:auto;
     margin-bottom: 150px;
+    margin-top: 120px;
 }
+
 #werkwijze img{
     height: 120px;
     width: auto;
 }
+
 #werkwijze p{
     margin: 0;
 }
+
 .wings{
     text-align:center;
 }
+
 .wings img{
     width:80%;
     margin:0 auto;
 }
+
 .hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
     font-size:1em;
     border:none;
@@ -459,9 +636,11 @@ i.fa{
     text-align:center;
     margin:20px 0;
 }
+
 .hetTeam p, #profesionals p,#team p{
     float:left;
 }
+
 #ontstaan p,#onsIdee p, #werkwijze p{
     float: right;
 }
@@ -545,7 +724,6 @@ i.fa{
     position: relative;
     height: 80px;
     margin-left: 10px;
-    margin-left: 10px;
 }
 
 .navigation .navigationWrapper .menu ul li a{
@@ -590,14 +768,15 @@ i.fa{
 .leftContent, .rightContent{
     width: 50%;
     height: 500px;
-    background-color: red;
+	background-image:url(../images/pattern-white.png);
+	background-size:cover;
     float: left;
     display: block;
 }
 
 .rightContent{
-    background-color: blue;
-}
+background-image:url(../images/pattern-white.png);
+	background-size:cover;}
 
 #wrapperHeader{
     width:100%;
@@ -605,12 +784,21 @@ i.fa{
     margin: 0 auto;
     text-align: center;
     color:#fff;
-    -webkit-box-sizing:border-box;
     box-sizing: border-box;
     position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .ageButtons a{
     width:400px;
@@ -644,7 +832,6 @@ i.fa{
     float: left;
     margin: 0 5%;
     background-color:#37c3e3;
-    -webkit-box-sizing:border-box;
     box-sizing:border-box;
     border: 6px solid #6d6e71;
 }
@@ -700,24 +887,24 @@ i.fa{
     .leftContent, .rightContent{
         width: 50%;
         height: 600px;
-        background-color: red;
-        float: left;
+background-image:url(../images/pattern-white.png);
+	background-size:cover;        float: left;
         display: block;
     }
 
     .rightContent{
-        background-color: blue;
-    }
+background-image:url(../images/pattern-white.png);
+	background-size:cover;    }
 
 }
 
-@media screen and ( min-height: 745px ) , screen and (min-width: 1000px) {
+@media screen and (min-height: 745px), screen and (min-width: 1000px) {
      #header, #slide-window{
          height: 800px;
      }
     
 }
-@media screen and ( min-height: 568px ) , screen and (max-width: 321px) {
+@media screen and (min-height: 568px) , screen and (max-width: 321px) {
     #header, #slide-window{
         height: 100vh;
     }

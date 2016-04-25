@@ -1,19 +1,48 @@
-glob = {
+window.onload = init();
+
+var glob = {
    currentQuestion : 1,
-   answerString : ""
+   answerString : "",
+   data : []
+
 }
 
-function next(a){
+var sglob = {
+      percentDone : (glob.currentQuestion / glob.data.length)*100
+}
+
+function init(){
+   var dreq = new loadQuestion;
+   dreq.load("../logic/PHP/questions.php",function(data){
+      glob.data = data;
+   })
+}
+
+function next(){
    var req = new loadQuestion;
    glob.currentQuestion += 1;
-   req.load("../logic/PHP/questions.php",function(data){
+   sglob.percentDone = Math.round((glob.currentQuestion / glob.data.length)*100);
       document.getElementById("num").innerHTML = glob.currentQuestion;
-      document.getElementById("question").innerHTML = "<p>" + data[glob.currentQuestion].question + "</p>";
-   });
-   glob.answerString += a;
+      document.getElementById("question").innerHTML = "<p>" + glob.data[glob.currentQuestion].question + "</p>";
+      document.getElementById("progress").innerHTML = "<p>" + sglob.percentDone + "%</p>";
+   glob.answerString += checked();
+   // console.log(glob.answerString);
+
 }
 
 
 $('input[type="checkbox"]').on('change', function() {
    $('input[type="checkbox"]').not(this).prop('checked', false);
 });
+
+function checked(){
+   for(var i=0; i<document.checkboxes.checkgroup.length; i++){
+      if(document.checkboxes.checkgroup[i].checked == true){
+         console.log(i);
+         return i;
+      }
+   }
+}
+
+
+
