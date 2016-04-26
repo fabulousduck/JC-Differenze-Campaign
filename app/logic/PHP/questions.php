@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "duckofdoom", "koekje","duckofdoom_jc-db");
+$mysqli = new mysqli("localhost", "root", "duck","JC-questions");
 
  if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno . "  " . $mysqli->connect_error;

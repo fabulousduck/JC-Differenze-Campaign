@@ -8,5 +8,5 @@
   <i class="fa fa-user fa-5x fa-inverse fltRight imrgtop" aria-hidden="true"></i>
 </nav>
 <div id="titleOne">
-    <i><p>wat is jou talent ?</p></i>
+    <i><p>wat is jouw talent ?</p></i>
 </div>
