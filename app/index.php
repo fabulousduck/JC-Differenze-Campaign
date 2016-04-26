@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="css/appStyle.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        
+
     </head>
    <body>
      <nav id="fb-nav">
@@ -39,10 +39,10 @@
         <div class="fb-button2">
             <a href=" <?php echo $loginUrl ?> ">login</a>
         </div>
-        
+
     </nav>
     <div id="titleOne">
-        <p>wat is jou talent ?</p>
+        <p>wat is jouw talent ?</p>
     </div>
     <div id="explainSection">
         <div id="explainOne">
@@ -56,11 +56,11 @@
     <div id="continueButton">
         <a href="views/questionTemplate.php">Doe De Quiz</a>
     </div>
-    
+
      <footer class="footer">
         <p>&copy; All rights reserved | Project by <a href="http://ma-web.nl">Mediacollege Amsterdam</a></p>
     </footer>
-    
+
     <script src="logic/JS/app-ageHandler.js"></script>
     <script src="logic/JS/httpRunner.js"></script>
 </body>
