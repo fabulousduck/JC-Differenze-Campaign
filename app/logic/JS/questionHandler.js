@@ -27,8 +27,13 @@ function next(){
       document.getElementById("progress").innerHTML = "<p>" + sglob.percentDone + "%</p>";
    glob.answerString += checked();
    // console.log(glob.answerString);
-   
+
 }
+
+
+$('input[type="checkbox"]').on('change', function() {
+   $('input[type="checkbox"]').not(this).prop('checked', false);
+});
 
 function checked(){
    for(var i=0; i<document.checkboxes.checkgroup.length; i++){

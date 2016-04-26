@@ -52,7 +52,7 @@
             <p>Dankzij deze quiz kunnen <span>wij</span> samen met jou,<br>erachter komen wat jou talent is!</p>
         </div>
     </div>
-<div class="clear"></div>
+    <div class="clear"></div>
     <div id="continueButton">
         <a href="views/questionTemplate.php">Doe De Quiz</a>
     </div>

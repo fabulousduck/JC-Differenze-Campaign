@@ -29,11 +29,14 @@
       <div id="next" onclick="next();">
          <p>volgende vraag</p>
       </div>
-            <script src="../logic/JS/httpRunner.js"></script>
+      
+      <?php
+   include "footer.php";
+       ?>
+      <script   src="http://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+      <script src="../logic/JS/httpRunner.js"></script>
       <script src="../logic/JS/questionHandler.js"></script>
 
    </body>
 </html>
-<?php
-   include "footer.php";
- ?>
+

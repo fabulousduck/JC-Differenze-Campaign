@@ -183,7 +183,7 @@
     </div> <!--End container 2-->
     <div class="clear"></div>
     
-    <footer class="footer">
+    <footer class="footer tienplus">
         <p>&copy; All rights reserved | Project by <a href="http://ma-web.nl">Mediacollege Amsterdam</a></p>
     </footer>
             
