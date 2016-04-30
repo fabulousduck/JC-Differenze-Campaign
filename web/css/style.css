@@ -2,248 +2,265 @@
     font-family: Chalkboard;
     src: url(../font/chalkboard.ttf);
 }
-
 /*
 BLAUW: #37c3e3;
 GRIJS: #6d6e71;
 */
 
-body{
-   padding:0;
-   margin:0;
-   background-image:url(../images/pattern-white.png);
-   font-family: sans-serif;
-   overflow-x: hidden !important;
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/pattern-white.png);
+    font-family: sans-serif;
+    overflow-x: hidden !important;
 }
-
-h1,h2{
+h1,
+h2 {
     font-family: chalkboard;
     letter-spacing: 3px;
 }
-
-span{
-    color:#37c3e3;
+span {
+    color: #37c3e3;
     font-style: italic;
 }
-
-
 /* HEADER SLIDER */
 
-#slide-window{
+#slide-window {
     visibility: hidden;
     display: none;
 }
+#buttons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+#buttons a:hover,
+#buttons a:active {
+    color: black;
+}
 /* END HEADER SLIDER */
 
-
-.clear{
+.clear {
     clear: both;
 }
-
-#wrapperHeader{
-    width:100%;
+#wrapperHeader {
+    width: 100%;
     height: 100vh;
     color: #fff;
     text-align: center;
     margin: 0 auto;
-    background:url('../images/social.jpg');
+    background: url('../images/social.jpg');
     background-position: center center;
-    background-size:cover;
-    box-shadow: inset 0 0 0 10000px rgba(0,0,0, 0.6);
+    background-size: cover;
+    box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.6);
 }
-
-#wrapperHeader h2{
+#wrapperHeader h2 {
     font-size: 7vw;
     margin: 15px 0;
 }
-
-#wrapperHeader img{
-    width:90%;
+#wrapperHeader img {
+    width: 90%;
     margin-top: 60px;
 }
-
-#container{
-    background:url('../images/pattern-white.png');
-    height:auto;
-    width:100%;
+#container {
+    background: url('../images/pattern-white.png');
+    height: auto;
+    width: 100%;
     padding-top: 50px;
 }
-
-.ageButtons{
+#buttoons {
+    width: 80%;
+    margin: 0 auto;
+    height: 120px;
+    margin-top: 80px;
+}
+#buttoons a {
+    font-size: 12px;
+    background: red;
+    width: 50%;
+    float: left;
+}
+.ageButtons {
     width: 40%;
     height: 120px;
     margin: 0 5%;
     float: left;
     line-height: 60px;
-    background-color:#37c3e3;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
+    background-color: #37c3e3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     border: 3px solid #6d6e71;
-    font-size:140%;
+    font-size: 140%;
 }
-
-.ageButtons h1{
+.ageButtons h1 {
     /*margin-top: 23%;*/
 }
-
-
 /* NAVIGATION MENU */
-.navigation{
-    width:100%;
+
+.navigation {
+    width: 100%;
     height: 50px;
-    background-color:#37c3e3;
+    background-color: #37c3e3;
     display: block;
     float: left;
 }
-
-.navigationWrapper{
+.navigationWrapper {
     width: 90%;
     height: 50px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-
-.logo img{
+.logo img {
     height: 35px;
-    margin-top: 8px ;
+    margin-top: 8px;
 }
-
-.navigation .navigationWrapper .logo{
+.navigation .navigationWrapper .logo {
     height: 50px;
     float: left;
 }
-
-.navigation .navigationWrapper .menu{
+.navigation .navigationWrapper .menu {
     width: auto;
     height: 50px;
     float: right;
     display: inline-block;
 }
-
-.navigation .navigationWrapper .menu ul{
+.navigation .navigationWrapper .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%;
 }
-
-.navigation .navigationWrapper .menu ul li{
+.navigation .navigationWrapper .menu ul li {
     display: inline-block;
     position: relative;
     height: 80px;
     margin-left: 10px;
 }
-
-.navigation .navigationWrapper .menu ul li a{
-    width:auto;
-    color:#fff;
+.navigation .navigationWrapper .menu ul li a {
+    width: auto;
+    color: #fff;
     text-decoration: none;
     padding: 16px 20px;
     display: inline-block;
 }
-
 .fixed {
-  position: fixed;
-  top:0;
-  z-index: 100000;
+    position: fixed;
+    top: 0;
+    z-index: 100000;
 }
-
 /* END NAVIGATION MENU */
 
-#container h1, #container h2{
+#container h1,
+#container h2 {
     font-family: 'PT Sans', sans-serif;
     font-style: italic;
-    text-align:center;
-    font-size:7vw;
+    text-align: center;
+    font-size: 7vw;
 }
-
-#container h4{
+#container h4 {
     font-family: 'PT Sans', sans-serif;
     font-style: italic;
     font-weight: 400;
     text-align: center;
     font-size: 3.3vw;
 }
-
-#wrapperContainer{
+#wrapperContainer {
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
 }
-
-.line1{
+.line1 {
     margin: 0 auto;
     width: 40%;
     height: 40px;
     border-bottom: 1px solid black;
     display: block;
-    -ms-transform: rotate(35deg); /* IE 9 */
-    -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
-    -moz-transform: rotate(5deg); /* Firefox */ 
+    -ms-transform: rotate(35deg);
+    /* IE 9 */
+    
+    -webkit-transform: rotate(35deg);
+    /* Chrome, Safari, Opera */
+    
+    -moz-transform: rotate(5deg);
+    /* Firefox */
+    
     transform: rotate(35deg);
 }
-
-.line2{
+.line2 {
     margin: 0 auto;
     width: 40%;
     height: 40px;
     border-bottom: 1px solid black;
     display: block;
-    -ms-transform: rotate(-35deg); /* IE 9 */
-    -webkit-transform: rotate(-35deg); /* Chrome, Safari, Opera */
-    -moz-transform: rotate(-35deg); /* Firefox */ 
+    -ms-transform: rotate(-35deg);
+    /* IE 9 */
+    
+    -webkit-transform: rotate(-35deg);
+    /* Chrome, Safari, Opera */
+    
+    -moz-transform: rotate(-35deg);
+    /* Firefox */
+    
     transform: rotate(-35deg);
 }
-
-.center{
+.center {
     text-align: center;
     font-size: 125%;
     line-height: 35px;
 }
-
-.hetTeam{
+.center i {
+    font-size: 4em;
+}
+.hetTeam {
     height: auto;
 }
-
-#slideLeft,#slideRight,#fadeIn,#fadeIn2,#fadeIn3, #slideLeft2,#fadeIn4,#slideRight2,#fadeIn5,#slideLeft3,#fadeIn6,#slideRight3,#fadeIn7, #slideLeft4,#fadeIn8,#slideRight4,#slideLeft5,#fadeIn9,#fadeIn10,#slideRight5{
+#slideLeft,
+#slideRight,
+#fadeIn,
+#fadeIn2,
+#fadeIn3,
+#slideLeft2,
+#fadeIn4,
+#slideRight2,
+#fadeIn5,
+#slideLeft3,
+#fadeIn6,
+#slideRight3,
+#fadeIn7,
+#slideLeft4,
+#fadeIn8,
+#slideRight4,
+#slideLeft5,
+#fadeIn9,
+#fadeIn10,
+#slideRight5 {
     visibility: hidden;
 }
-
-.wings img{
-    width:100%;
+.wings img {
+    width: 100%;
 }
-.margin-o{
-    margin-top:0 !important;
+.margin-o {
+    margin-top: 0 !important;
 }
-
-.hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
-    width:75%;
-    border-left: 1px solid #000;
-    text-align: left;
-    padding-left: 20px;
-    margin:0;
-    font-size:0.5em;
-    line-height: 20px;
-    float: right;
-}
-
-.hetTeam, #ontstaan, #profesionals, #onsIdee, #team, #werkwijze{
+.hetTeam,
+#ontstaan,
+#profesionals,
+#onsIdee,
+#team,
+#werkwijze {
     margin: 20px 0;
 }
-
-i.fa{
-    font-size:1.2em;
+i.fa {
+    font-size: 1.2em;
 }
-
-#werkwijze img{
-    width:40px;
+#werkwijze img {
+    width: 40px;
 }
-
-#youtube{
+#youtube {
     width: 100%;
     height: 50px;
 }
-
 .video-container {
     position: relative;
     padding-bottom: 40.25%;
@@ -251,48 +268,42 @@ i.fa{
     height: 0;
     overflow: hidden;
 }
-
 .video-container iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-
-.leftContent{
+.leftContent {
     width: 100%;
-    height: 50%;
-	background-image:url(../images/pattern-white.png);
-	background-size:cover;
-	float: left;
-    display: block;
-    
-}
-
-.rightContent{
-    width: 100%;
-    height: 50%;
-	background-image:url(../images/pattern-white.png);
-	background-size:cover;    
-	float: left;
+    height: 500px;
+    background-image: url(../images/pattern-white.png);
+    background-size: cover;
+    float: left;
     display: block;
 }
-
-#buttons{
-    width:90%;
+.rightContent {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/pattern-white.png);
+    background-size: cover;
+    float: left;
+    display: block;
+}
+#buttons {
+    width: 90%;
     height: 50px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-
-#buttoons a{
+#buttoons a {
     height: 50px;
     background: #37c3e3;
-    color:#fff;
+    color: #fff;
     text-decoration: none;
-    display:block;
-    width:100%;
-    box-sizing:border-box;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
     line-height: 50px;
@@ -300,612 +311,578 @@ i.fa{
     border-radius: 10px;
     border: 3px solid #6d6e71;
 }
-
-#buttoons a:hover, #buttoons a:active{
+#buttoons a:hover,
+#buttoons a:active {
     background: #6d6e71;
     transition: ease 0.7s;
 }
-
-#buttoons a:first-child{
-    margin-right:0;
+#buttoons a:first-child {
+    margin-right: 0;
 }
-
-#buttoons a:last-child{
+#buttoons a:last-child {
     margin-left: 0;
 }
-
-footer.footer{
-    width:90%;
-    color:#6d6e71;
-    margin:0 auto;
-    border-top:1px solid #6d6e71;
+footer.footer {
+    width: 90%;
+    color: #6d6e71;
+    margin: 0 auto;
+    border-top: 1px solid #6d6e71;
     text-align: center;
-    font-size:3vw;
-    padding:3px 0;
+    font-size: 3vw;
+    padding: 3px 0;
     margin-top: 50px;
 }
-
-footer a{
-    color:#6d6e71;
+footer a {
+    color: #6d6e71;
 }
-
-
 /*tienplus versie*/
 
-.tienplus_tekst{
-	margin-top: 30%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 0;
-	font-size: 175%;
-	line-height: 35px;
-	text-align: center;
-	width: 75%;
+#container div p {
+    font-size: 1em;
+    height: auto;
 }
-
-.tienplus_hand{
-	text-align: center;
-	font-size:2em;
+#container div p.tienplus_tekst {
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    font-size: 1em;
+    line-height: 35px;
+    text-align: center;
+    width: 75%;
 }
-
+.tienplus_hand {
+    text-align: center;
+    font-size: 2em;
+}
 .leftContent.als_kind {
-	background-image:url(../images/lachend_meisje.jpg);
-	background-size:cover;
+    background-image: url(../images/lachend_meisje.jpg);
+    background-size: cover;
 }
-
-
-.leftContent.rightContent{
-	background-image:url(../images/pattern-white.png);
-	background-size:cover;
+.leftContent.rightContent {
+    background-image: url(../images/pattern-white.png);
+    background-size: cover;
 }
-
 .rightContent.meestal_moet_je_luisteren {
-	background-image:url(../images/meisje.jpg);
-	background-size:cover;
+    background-image: url(../images/meisje.jpg);
+    background-size: cover;
+    background-position: center center;
 }
-
 .leftContent.negeer_op_dit_moment {
-	background-image:url(../images/social.jpg);
-	background-size:cover;
+    background-image: url(../images/social.jpg);
+    background-size: cover;
+    background-position:center;
 }
-
 .rightContent.maak_je_eigen_weg {
-	background-image:url(../images/trap.jpg);
-	background-size:cover;
+    background-image: url(../images/trap.jpg);
+    background-size: cover;
+    background-position:center;
 }
-
-.leftContent.zet_je_eigen_puzzelstukjes{
-	background-image:url(../images/puzzelstukjes.jpg);
-	background-size:cover;
+.leftContent.zet_je_eigen_puzzelstukjes {
+    background-image: url(../images/puzzelstukjes.jpg);
+    background-size: cover;
 }
-
-.rightContent.misschien_kan_je_het_niet_alleen{
-	background-image:url(../images/handen.jpg);
-	background-size:cover;
+.rightContent.misschien_kan_je_het_niet_alleen {
+    background-image: url(../images/handen.jpg);
+    background-size: cover;
+        background-position:center;
 }
-
 .leftContent.met_een_beetje_hulp {
-	background-image:url(../images/photo_40414_20150901.jpg);
-	background-size:cover;
+    background-image: url(../images/photo_40414_20150901.jpg);
+    background-size: cover;
+    background-position: center center;
 }
-
 .footer.tienplus {
-	font-size: 1em;
+    font-size: 1em;
 }
-
-#buttoons.tienplus_buttons {
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-}
-
-#buttoons.tienplus_buttons a{
-	margin-top:80px;
-	margin-bottom:15px;
-}
-
 .tienplus {
-	background-image:url(../images/pattern-white.png);
-	background-size:cover;
+    background-image: url(../images/pattern-white.png);
+    background-size: cover;
 }
-
-
 /*einde tienplus versie*/
 
-@media screen and (min-width: 500px ){
-    .ageButtons{
+@media screen and (min-width: 500px) {
+    .ageButtons {
         height: 200px;
         line-height: 120px;
     }
-	
-	.leftContent.als_kind{
-		background-image: url(../images/lachend_meisje.jpg);
-background-size: cover;
-height: 500px;
-	}
-	
-	.rightContent.meestal_moet_je_luisteren {
-	background-image:url(../images/meisje.jpg);
-	background-size:cover;
-	height: 500px;
+    .leftContent.als_kind {
+        background-image: url(../images/lachend_meisje.jpg);
+        background-size: cover;
+    }
+    .rightContent.meestal_moet_je_luisteren {
+        background-image: url(../images/meisje.jpg);
+        background-size: cover;
+        float: right;
+    }
+    .leftContent.negeer_op_dit_moment {
+        background-image: url(../images/social.jpg);
+        background-size: cover;
+    }
+    .rightContent.maak_je_eigen_weg {
+        background-image: url(../images/trap.jpg);
+        background-size: cover;
+        float: right;
+    }
+    .leftContent.zet_je_eigen_puzzelstukjes {
+        background-image: url(../images/puzzelstukjes.jpg);
+        background-size: cover;
+    }
+    .rightContent.misschien_kan_je_het_niet_alleen {
+        background-image: url(../images/handen.jpg);
+        background-size: cover;
+        float: right;
+    }
+    .leftContent.met_een_beetje_hulp {
+        background-image: url(../images/photo_40414_20150901.jpg);
+        background-size: cover;
+    }
 }
-
-.leftContent.negeer_op_dit_moment {
-	background-image:url(../images/social.jpg);
-	background-size:cover;
-	height: 500px;
-}
-
-.rightContent.maak_je_eigen_weg {
-	background-image:url(../images/trap.jpg);
-	background-size:cover;
-	height: 500px;
-}
-
-.leftContent.zet_je_eigen_puzzelstukjes{
-	background-image:url(../images/puzzelstukjes.jpg);
-	background-size:cover;
-	height: 500px;
-}
-
-.rightContent.misschien_kan_je_het_niet_alleen{
-	background-image:url(../images/handen.jpg);
-	background-size:cover;
-	height: 500px;
-}
-
-.leftContent.met_een_beetje_hulp {
-	background-image:url(../images/photo_40414_20150901.jpg);
-	background-size:cover;
-	height: 500px;
-}
-}
-@media screen and (min-width:766px){/*Tablet*/
+@media screen and (min-width: 766px) {
+    /*Tablet*/
     
-    .ageButtons h1{
+    .ageButtons h1 {
         font-size: 300%;
     }
-	
-    #wrapperHeader{
-        width:70%;
+    #wrapperHeader {
+        width: 70%;
         background: none;
-        box-shadow:none;
+        box-shadow: none;
     }
-	
-    #wrapperHeader img{
-        width:50%;
+    #wrapperHeader img {
+        width: 50%;
     }
-	
-    #wrapperHeader h2{
+    #wrapperHeader h2 {
         font-size: 2.5em;
     }
-    
-.slide {
-      list-style:none;
-      position: relative;
-      float: left;
-      margin: 0;
-      padding: 0;
-      width: 500px;
-      height: 100%;
-      background: #ccc;
-      text-align: center;
-      line-height: 300px; 
-      background-size: cover; 
-      background-position:50% 50%;
-      color:#fff;
-      visibility:hidden;
-      -webkit-transform-style: preserve-3d;
-      box-shadow: inset 0 0 0 10000px rgba(0,0,0, 0.6);
-}
-
-.alive { visibility:visible; }
-
-#slide-window {
-  display: block;
-  position:absolute;
-  width:100%;
-  height:100vh;
-  overflow:hidden;
-  top:0px;
-  left:0px;
-  z-index: -10;
-  }
-
-#slides {
-  height:100%;  
-  position:absolute;
-  margin:0px;
-  padding:0px;
-  -webkit-transform: translate3d(0px,0px,0px);
-  transform: translate3d(0px,0px,0px);
-  transition: all 0.66s ease; -webkit-transition: all 0.66s ease; 
-  }
-  
-  #container h1, #container h2{
-    font-family: 'PT Sans', sans-serif;
-    font-style: italic;
-    text-align:center;
-    font-size:250%;
-}
-
-#container h4{
-    font-size:120%;
-    margin-bottom: 100px;
-}
-
-.navigationWrapper{
-    width: 80%;
-}
-
-i.fa{
-    font-size:3em;
-    margin-top: 20px;
-    width:15%;
-    display: inline-block !important;
-}
-
-.hetTeam{
-    width:600px;
-    height: 120px;
-    margin-bottom: 150px;
-}
-
-.tachtig{
-    width:80%;
-}
-
-.twintig{
-    width:20%;
-}
-
-.left{
-    float: left;
-}
-
-.right{
-    float: right;
-}
-
-#ontstaan{
-    width:500px;
-    margin-bottom: 120px;
-    height: auto;
-}
-
-#ontstaan p{
-    margin-top:40px;
-}
-
-#profesionals{
-    width:750px;
-    margin-bottom: 120px;
-    height: auto;
-}
-
-#profesionals i{
-    font-size:4em;
-    margin-top: 45px;
-}
-
-#onsIdee{
-    width:750px;
-    margin-bottom: 120px;
-    height: auto;
-}
-
-#onsIdee i{
-    font-size:5em;
-}
-
-#team{
-    width: 775px;
-    margin-bottom: 150px;
-    height: auto;
-}
-
-#werkwijze{
-    width:600px;
-    height:auto;
-    margin-bottom: 150px;
-    margin-top: 120px;
-}
-
-#werkwijze img{
-    height: 120px;
-    width: auto;
-}
-
-#werkwijze p{
-    margin: 0;
-}
-
-.wings{
-    text-align:center;
-}
-
-.wings img{
-    width:80%;
-    margin:0 auto;
-}
-
-.hetTeam p, #ontstaan p, #profesionals p, #onsIdee p, #team p, #werkwijze p{
-    font-size:1em;
-    border:none;
-    line-height: 35px;
-    text-align:center;
-    margin:20px 0;
-}
-
-.hetTeam p, #profesionals p,#team p{
-    float:left;
-}
-
-#ontstaan p,#onsIdee p, #werkwijze p{
-    float: right;
-}
-#werkwijze p{
-    margin: 0;
-}
-#wachten{
-    width:700px;
-    margin-bottom: 120px;
-}
-.video-container {
-    position: relative;
-    padding-bottom: 0;
-    padding-top: 0;
-    height: 0;
-    overflow: hidden;
-}
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-#youtube{
-    height: 80vh;
-    width:100%;
-}
-.wijHebben{
-    width:600px;
-    margin-bottom: 120px;
-    margin-top: 50px;
-}
-.dankzij{
-    width:600px;
-    margin-bottom: 120px;
-}
-
-/* NAVIGATION MENU */
-
-.navigation{
-    width:100%;
-    height: 80px;
-    background-color:#37c3e3;
-    display: block;
-    float: left;
-}
-
-.navigationWrapper{
-    width: 75%;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-.logo img{
-    height: 55px;
-    margin-top: 15px ;
-}
-.navigation .navigationWrapper .logo{
-    height: 80px;
-    float: left;
-}
-
-.navigation .navigationWrapper .menu{
-    width: auto;
-    height: 80px;
-    float: right;
-    display: inline-block;
-}
-
-.navigation .navigationWrapper .menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.navigation .navigationWrapper .menu ul li{
-    display: inline-block;
-    position: relative;
-    height: 80px;
-    margin-left: 10px;
-}
-
-.navigation .navigationWrapper .menu ul li a{
-    display: block;
-    width: auto;
-    height: 50px;
-    padding: 30px 0 0 0;
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-#buttons{
-    width:70%;
-    height: 50px;
-}
-#buttoons a{
-    height: 100px;
-    background: #37c3e3;
-    color:#fff;
-    text-decoration: none;
-    display:block;
-    width:49%;
-    box-sizing:border-box;
-    padding: 4px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 100px;
-    font-size:2em;
-}
-#buttoons a:first-child{
-    margin-right: 5px;
-}
-#buttoons a:last-child{
-    margin-left: 5px;
-}
-
-}
-@media screen and (min-width:1100px){ /*Laptop*/
-
-.leftContent, .rightContent{
-    width: 50%;
-    height: 500px;
-	background-image:url(../images/pattern-white.png);
-	background-size:cover;
-    float: left;
-    display: block;
-}
-
-.rightContent{
-background-image:url(../images/pattern-white.png);
-	background-size:cover;}
-
-#wrapperHeader{
-    width:100%;
-    height: 100vh;
-    margin: 0 auto;
-    text-align: center;
-    color:#fff;
-    box-sizing: border-box;
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-.ageButtons a{
-    width:400px;
-    height: 400px;
-}
-.ageButtons a:hover{
-    background:red;
-}
-#wrapperHeader h1{
-    font-size:4em;
-}
-#wrapperHeader h2{
-    font-size: 3em;
-    letter-spacing: 3px;
-    margin: 10px 0;
-}
-#wrapperHeader img{
-    width: 600px;
-    margin: 10px 0;
-}
-/*AGE BUTTONS*/
-#buttons{
-    width:60%;
-    margin:0 auto;
-    z-index: 0;
-}
-.ageButtons{
-    width: 40%;
-    height: 350px;
-    line-height: 250px;
-    float: left;
-    margin: 0 5%;
-    background-color:#37c3e3;
-    box-sizing:border-box;
-    border: 6px solid #6d6e71;
-}
-
-/*.ageButtons:first-child{margin-right: 0;}*/
-
-.ageButtons .tenPlusButton, .ageButtons .sixteenPlusButton{
-    
-}
-
-/*END AGE BUTTONS/header*/
-
-.navigation{
-    width:100%;
-    height: 80px;
-    background-color:#37c3e3;
-    display: block;
-    float: left;
-}
-#container{
-    background:url('../images/pattern-white.png');
-    height:2400px;
-    width:100%;
-    padding-top: 30px;
-}
-.containerMargin{
-    margin-top: 80px;
-}
-.wings img{
-    width:90%;
-    margin:0 auto;
-}
-}
-
-@media screen and (min-width:1600px){ /*desktop*/
-    #buttons{
-    width:850px;
+    #container div p.tienplus_tekst {
+        margin-top: 150px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0;
+        font-size: 2em;
+        line-height: 45px;
+        text-align: center;
+        width: 75%;
     }
-    .ageButtons{
-    height: 350px;
+    .slide {
+        list-style: none;
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        height: 100%;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+        background-size: cover;
+        background-position: 50% 50%;
+        color: #fff;
+        visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.6);
     }
-    #wrapperHeader h1{
-    /*margin-top: 33%;*/
+    .alive {
+        visibility: visible;
     }
-    #wrapperContainer{
-        width:60%;
+    #slide-window {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        top: 0px;
+        left: 0px;
+        z-index: -10;
     }
-    .hetTeam{
-        width:650px;
+    #slides {
+        height: 100%;
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+        transition: all 0.66s ease;
+        -webkit-transition: all 0.66s ease;
+    }
+    #container h1,
+    #container h2 {
+        font-family: 'PT Sans', sans-serif;
+        font-style: italic;
+        text-align: center;
+        font-size: 250%;
+    }
+    #container h4 {
+        font-size: 120%;
+        margin-bottom: 100px;
+    }
+    .navigationWrapper {
+        width: 80%;
+    }
+    i.fa {
+        font-size: 3em;
+        margin-top: 20px;
+        width: 15%;
+        display: inline-block !important;
+    }
+    .hetTeam {
+        width: 600px;
         height: 120px;
+        margin-bottom: 150px;
     }
+    .tachtig {
+        width: 80%;
+    }
+    .twintig {
+        width: 20%;
+    }
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    #ontstaan {
+        width: 500px;
+        margin-bottom: 120px;
+        height: auto;
+    }
+    #ontstaan p {
+        margin-top: 40px;
+    }
+    #profesionals {
+        width: 750px;
+        margin-bottom: 120px;
+        height: auto;
+    }
+    #profesionals i {
+        font-size: 4em;
+        margin-top: 45px;
+    }
+    #onsIdee {
+        width: 750px;
+        margin-bottom: 120px;
+        height: auto;
+    }
+    #onsIdee i {
+        font-size: 5em;
+    }
+    #team {
+        width: 775px;
+        margin-bottom: 150px;
+        height: auto;
+    }
+    #werkwijze {
+        width: 600px;
+        height: auto;
+        margin-top: 120px;
+    }
+    #werkwijze img {
+        height: 120px;
+        width: auto;
+    }
+    #werkwijze p {
+        margin: 0;
+    }
+    .wings {
+        text-align: center;
+    }
+    .wings img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hetTeam p,
+    #ontstaan p,
+    #profesionals p,
+    #onsIdee p,
+    #team p,
+    #werkwijze p {
+        font-size: 1em;
+        border: none;
+        line-height: 35px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    #zestig {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .hetTeam p,
+    #profesionals p,
+    #team p {
+        float: left;
+    }
+    #ontstaan p,
+    #onsIdee p,
+    #werkwijze p {
+        float: right;
+    }
+    #werkwijze p {
+        margin: 0;
+    }
+    #wachten {
+        width: 700px;
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #youtube {
+        height: 80vh;
+        width: 100%;
+    }
+    .wijHebben {
+        width: 600px;
+        margin-bottom: 120px;
+        margin-top: 50px;
+    }
+    .dankzij {
+        width: 600px;
+        margin-bottom: 220px;
+    }
+    /* NAVIGATION MENU */
     
-    .leftContent, .rightContent{
-        width: 50%;
-        height: 600px;
-background-image:url(../images/pattern-white.png);
-	background-size:cover;        float: left;
+    .navigation {
+        width: 100%;
+        height: 80px;
+        background-color: #37c3e3;
+        display: block;
+        float: left;
+    }
+    .navigationWrapper {
+        width: 75%;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
         display: block;
     }
-
-    .rightContent{
-background-image:url(../images/pattern-white.png);
-	background-size:cover;    }
-
+    .logo img {
+        height: 55px;
+        margin-top: 15px;
+    }
+    .navigation .navigationWrapper .logo {
+        height: 80px;
+        float: left;
+    }
+    .navigation .navigationWrapper .menu {
+        width: auto;
+        height: 80px;
+        float: right;
+        display: inline-block;
+    }
+    .navigation .navigationWrapper .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .navigation .navigationWrapper .menu ul li {
+        display: inline-block;
+        position: relative;
+        height: 80px;
+        margin-left: 10px;
+    }
+    .navigation .navigationWrapper .menu ul li a {
+        display: block;
+        width: auto;
+        height: 50px;
+        padding: 30px 0 0 0;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    #buttons {
+        width: 70%;
+        height: 50px;
+    }
+    #buttoons a {
+        height: 100px;
+        background: #37c3e3;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        width: 49%;
+        box-sizing: border-box;
+        padding: 4px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 90px;
+        font-size: 1.5em;
+        line-height: 100px;
+        font-size: 2em;
+    }
+    #buttoons a:first-child {
+        margin-right: 1%;
+    }
+    #buttoons a:last-child {
+        margin-left: 5px;
+    }
 }
-
-@media screen and (min-height: 745px), screen and (min-width: 1000px) {
-     #header, #slide-window{
-         height: 800px;
-     }
+@media screen and (min-width: 1100px) {
+    /*Laptop*/
     
-}
-@media screen and (min-height: 568px) , screen and (max-width: 321px) {
-    #header, #slide-window{
+    .leftContent,
+    .rightContent {
+        width: 50%;
+        height: 500px;
+        background-image: url(../images/pattern-white.png);
+        background-size: cover;
+        float: left;
+        display: block;
+    }
+    #wrapperHeader {
+        width: 100%;
         height: 100vh;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        box-sizing: border-box;
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .ageButtons a {
+        width: 400px;
+        height: 400px;
+    }
+    .ageButtons a:hover {
+        background: red;
+    }
+    #wrapperHeader h1 {
+        font-size: 4em;
+    }
+    #wrapperHeader h2 {
+        font-size: 3em;
+        letter-spacing: 3px;
+        margin: 10px 0;
+    }
+    #wrapperHeader img {
+        width: 600px;
+        margin: 10px 0;
+    }
+    /*AGE BUTTONS*/
+    
+    #buttons {
+        width: 60%;
+        margin: 0 auto;
+        z-index: 0;
+    }
+    .ageButtons {
+        width: 40%;
+        height: 350px;
+        line-height: 250px;
+        float: left;
+        margin: 0 5%;
+        background-color: #37c3e3;
+        box-sizing: border-box;
+        border: 6px solid #6d6e71;
+    }
+    /*.ageButtons:first-child{margin-right: 0;}*/
+    
+    .ageButtons .tenPlusButton,
+    .ageButtons .sixteenPlusButton {}
+    /*END AGE BUTTONS/header*/
+    
+    .navigation {
+        width: 100%;
+        height: 80px;
+        background-color: #37c3e3;
+        display: block;
+        float: left;
+    }
+    #container {
+        background: url('../images/pattern-white.png');
+        height: auto;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .containerMargin {
+        margin-top: 80px;
+    }
+    .wings img {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1600px) {
+    /*desktop*/
+    
+    #buttons {
+        width: 850px;
+    }
+    .ageButtons {
+        height: 350px;
+    }
+    #wrapperHeader h1 {
+        /*margin-top: 33%;*/
+    }
+    #wrapperContainer {
+        width: 60%;
+    }
+    .hetTeam {
+        width: 650px;
+        height: 120px;
+    }
+    .leftContent,
+    .rightContent {
+        width: 50%;
+        height: 600px;
+        background-image: url(../images/pattern-white.png);
+        background-size: cover;
+        float: left;
+        display: block;
+    }
+    .rightContent {
+        background-image: url(../images/pattern-white.png);
+        background-size: cover;
+    }
+}
+@media screen and (min-height: 745px),
+screen and (min-width: 1000px) {
+    #header,
+    #slide-window {
+        height: 800px;
+    }
+}
+@media screen and (min-height: 568px),
+screen and (max-width: 321px) {
+    #header,
+    #slide-window {
+        height: 100vh;
+    }
+}
+@media screen and ( max-height: 751px),
+screen and (min-width: 1280px) {
+    .ageButtons {
+        width: 40%;
+        height: 200px;
+        line-height: 130px;
+    }
+    #wrapperHeader h1 {
+        font-size: 2em;
     }
 }
