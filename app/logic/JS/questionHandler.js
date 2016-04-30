@@ -25,7 +25,7 @@ function next(){
    sglob.percentDone = Math.round((glob.currentQuestion / glob.data.length)*100);
 
    if(sglob.percentDone > 90 && !glob.endgame){
-       document.getElementById("next").innerHTML = "<p onclick='end()'>done</p>";
+       document.getElementById("next").innerHTML = "<form action='../views/endpage.php' method='post'> <input type='submit' value='done'></form>";
        document.getElementById("progress").innerHTML = "<p>" + sglob.percentDone+"%</p>";
 
    }else if(sglob.percentDone < 90 && !glob.endgame){
@@ -42,8 +42,11 @@ function next(){
 
 function end(){
     glob.endgame = true;
-    document.querySelector("body").innerHTML = '<div class="endo" style="height:300px; width:70%; border:1px solid #000; margin-left:15%; margin-top: 500px;"><p style="font-family: sans-serif; text-align: center; color: #4c66a4; font-size: 40px;">Bedankt voor het doen van de quiz.<br>Je resultaat is opgeslagen.</p></div>';
-
+    //document.querySelector("body").innerHTML = '<div class="endo" style="height:300px; width:70%; border:1px solid #000; margin-left:15%; margin-top: 500px;"><p style="font-family: sans-serif; text-align: center; color: #4c66a4; font-size: 40px;">Bedankt voor het doen van de quiz.<br>Je resultaat is opgeslagen.</p></div>';
+    var r = new loadQuestion;
+    r.load("../views/endpage.php",function(data){
+        document.querySelector("body").innerHTML = data;
+    })
 
 }
 
